@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import logo from '../public/logo.png'
 
 const Navbar = () => {
   return (
@@ -8,7 +9,7 @@ const Navbar = () => {
         <Link href='#'>Le Football de Table</Link>
         <Link href='#'>Calendrier des Tournois</Link>
       </div>
-      <Image src='/logo.png' alt='logo TFT' width={100} height={100} />
+      <Image src={logo} alt='logo TFT' className='h-24 w-auto' />
       <div className='flex justify-between gap-6'>
         <Link href='#'>Rejoignez Nous (Licence)</Link>
         <Link href='#'>Contactez Nous</Link>
