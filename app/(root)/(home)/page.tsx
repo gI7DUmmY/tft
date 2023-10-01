@@ -24,12 +24,13 @@ export default async function Home() {
           </h2>
         </div>
         {objectifs && (
-          <div className='flex flex-col md:flex-row justify-between items-center'>
+          <div className='flex flex-col justify-evenly items-center md:flex-row'>
             {objectifs.data.map((obj: any) => (
               <Objectif
                 key={obj.id}
                 titre={obj.attributes.titre}
                 details={obj.attributes.details}
+                icon={obj.attributes.icon}
               />
             ))}
           </div>
