@@ -4,7 +4,7 @@ import logo from '../public/logo.png'
 
 const Navbar = () => {
   return (
-    <nav className='fixed top-0 z-50 w-full flex flex-row justify-between items-center bg-indigo-900 text-white px-3'>
+    <nav className='fixed top-0 z-50 w-full flex flex-row justify-between items-center bg-indigo-900 text-white px-3 font-sans'>
       <div className='flex justify-between gap-6'>
         <Link href='#'>Le Football de Table</Link>
         <Link href='#'>Calendrier des Tournois</Link>

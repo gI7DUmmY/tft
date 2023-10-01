@@ -9,7 +9,7 @@ interface Props {
 
 const HeroCard = ({ titre, details, icon }: Props) => {
   return (
-    <div className='flex flex-col gap-3 text-center px-3'>
+    <div className='flex flex-col gap-6 justify-between text-center px-3'>
       {icon === 'school' && (
         <div className='mx-auto text-purple-600 text-5xl'>
           <MdSchool />
@@ -35,8 +35,8 @@ const HeroCard = ({ titre, details, icon }: Props) => {
           className='rounded-full mx-auto'
         />
       )}
-      <h3 className='block'>{titre}</h3>
-      <p>{details}</p>
+      <h3 className='block uppercase'>{titre}</h3>
+      <p className='block'>{details}</p>
     </div>
   )
 }

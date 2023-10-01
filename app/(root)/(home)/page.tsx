@@ -11,15 +11,15 @@ export default async function Home() {
   }).then(res => res.json())
 
   return (
-    <main className='pt-[96px] w-full'>
+    <main className='pt-[96px] w-full font-sans'>
       <Hero />
 
       <section className='w-full flex flex-col justify-center gap-6'>
         <div className='pt-3'>
-          <h1 className='text-center font-extrabold text-3xl text-white drop-shadow-lg'>
+          <h1 className='text-center font-extrabold text-3xl text-slate-600 drop-shadow-lg font-mono'>
             Notre objectif
           </h1>
-          <h2 className='text-center font-semibold text-lg text-white drop-shadow-md'>
+          <h2 className='text-center font-semibold text-lg text-slate-600 drop-shadow-md'>
             est de développer le Football de Table
           </h2>
         </div>
