@@ -24,7 +24,7 @@ export default async function Home() {
           </h2>
         </div>
         {objectifs && (
-          <div className='flex flex-col justify-evenly items-center md:flex-row'>
+          <div className='grid grid-cols-4 grid-flow-col'>
             {objectifs.data.map((obj: any) => (
               <Objectif
                 key={obj.id}
