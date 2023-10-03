@@ -2,12 +2,12 @@ import React from 'react'
 
 const Hero = () => {
   return (
-    <section className='w-full relative parallax' id='hero'>
-      <div className='absolute top-4 inset-x-0'>
-        <h1 className='text-center font-extrabold text-3xl text-slate-50 drop-shadow-2xl font-mono'>
+    <section className='w-full h-[92vh] parallax' id='hero'>
+      <div className='text-center pt-[25vh]'>
+        <h1 className='font-extrabold text-3xl text-white drop-shadow-white font-mono'>
           Toulouse Football de Table
         </h1>
-        <h2 className='text-center font-semibold text-lg text-slate-50 drop-shadow-md font-sans'>
+        <h2 className='font-semibold text-lg text-white drop-shadow-white font-sans'>
           Un esprit, un club, une même passion
         </h2>
       </div>
