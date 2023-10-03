@@ -26,3 +26,13 @@
 #horaires {
   background-image: url('https://images.pexels.com/photos/9003001/pexels-photo-9003001.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
 }
+
+#news {
+  background-image: url('https://images.pexels.com/photos/159400/television-camera-men-outdoors-ballgame-159400.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+}
+
+#facebook {
+  background-image: url('http://localhost:3000/post-media.svg');
+  background-size: 50%;
+  background-repeat: repeat-x;
+}

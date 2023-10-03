@@ -3,12 +3,12 @@ import { MdAccessTime, MdLocationOn } from 'react-icons/md'
 const Horaires = () => {
   return (
     <section className='w-full parallax' id='horaires'>
-      <div className='pt-24 h-[45vh]'>
+      <div className='pt-24 h-[35vh]'>
         <h1 className='text-center font-extrabold text-3xl text-slate-50 drop-shadow-black font-mono uppercase'>
           Horaires des entraînements
         </h1>
       </div>
-      <div className='flex flex-row justify-evenly bg-indigo-900 text-center text-slate-50 py-6'>
+      <div className='flex flex-row justify-evenly bg-indigo-900 text-center text-slate-50 pt-12 h-[25vh]'>
         <div>
           <MdLocationOn className='text-6xl  mx-auto mb-3' />
           <p>

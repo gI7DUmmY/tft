@@ -17,8 +17,8 @@ interface Props {
 
 const Objectifs = ({ objectifs }: Props) => {
   return (
-    <section className='w-full flex flex-col justify-center gap-6'>
-      <div className='pt-3'>
+    <section className='w-full flex flex-col justify-center gap-6 py-6'>
+      <div>
         <h1 className='text-center font-extrabold text-3xl text-slate-600 drop-shadow-black font-mono'>
           Notre objectif
         </h1>

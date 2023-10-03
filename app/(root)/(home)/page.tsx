@@ -1,6 +1,7 @@
 import Objectifs from '@/components/Objectifs'
 import Hero from '@/components/Hero'
 import Horaires from '@/components/Horaires'
+import News from '@/components/News'
 
 export default async function Home() {
   const objectifs = await fetch('http://localhost:1337/api/objectifs', {
@@ -18,6 +19,8 @@ export default async function Home() {
       <Objectifs objectifs={objectifs} />
 
       <Horaires />
+
+      <News />
     </main>
   )
 }
