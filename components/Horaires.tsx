@@ -27,10 +27,17 @@ const Horaires = () => {
             </li>
             <li>
               <span className='font-bold uppercase'>vendredi</span> de 18h00 à
-              22h30
+              22h00
             </li>
           </ul>
         </div>
+      </div>
+      <div>
+        <iframe
+          id='gmap'
+          src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.985564825796!2d1.429965976864997!3d43.648468671102364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aea497e3f0544b%3A0xb4d8b5637610e11b!2sCentre%20d&#39;Animation%20de%20Lalande!5e0!3m2!1sfr!2sfr!4v1696405649237!5m2!1sfr!2sfr'
+          className='w-full h-[45vh]'
+        ></iframe>
       </div>
     </section>
   )

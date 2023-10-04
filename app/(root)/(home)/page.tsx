@@ -19,8 +19,6 @@ export default async function Home() {
       <Objectifs objectifs={objectifs} />
 
       <Horaires />
-
-      <News />
     </main>
   )
 }
