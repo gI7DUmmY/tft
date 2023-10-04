@@ -17,7 +17,7 @@ interface Props {
 
 const Objectifs = ({ objectifs }: Props) => {
   return (
-    <section className='w-full flex flex-col justify-center gap-6 py-6'>
+    <section className='w-full flex flex-col justify-center py-6'>
       <div>
         <h1 className='text-center font-extrabold text-3xl text-slate-600 drop-shadow-black font-mono'>
           Notre objectif
@@ -27,7 +27,7 @@ const Objectifs = ({ objectifs }: Props) => {
         </h2>
       </div>
       {objectifs && (
-        <div className='grid grid-cols-4 grid-flow-col'>
+        <div className='flex flex-col justify-evenly gap-6 mt-3 md:grid md:grid-cols-4 md:grid-flow-col'>
           {objectifs.data.map((obj: any) => (
             <Objectif
               key={obj.id}

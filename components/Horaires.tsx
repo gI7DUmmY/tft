@@ -8,9 +8,9 @@ const Horaires = () => {
           Horaires des entraînements
         </h1>
       </div>
-      <div className='flex flex-row justify-evenly bg-indigo-900 text-center text-slate-50 pt-12 h-[25vh]'>
+      <div className='flex flex-row justify-evenly bg-indigo-900 text-center text-slate-50 h-[35vh] pt-6 md:h-[25vh] md:pt-12'>
         <div>
-          <MdLocationOn className='text-6xl  mx-auto mb-3' />
+          <MdLocationOn className='text-5xl  mx-auto mb-3 text-red-600' />
           <p>
             <span className='font-bold'>Centre d'animation de Lalande</span>{' '}
             <br />
@@ -19,7 +19,7 @@ const Horaires = () => {
           </p>
         </div>
         <div>
-          <MdAccessTime className='text-6xl mx-auto mb-3' />
+          <MdAccessTime className='text-5xl mx-auto mb-3 text-amber-400' />
           <ul>
             <li>
               <span className='font-bold uppercase'>mercredi</span> de 18h30 à
