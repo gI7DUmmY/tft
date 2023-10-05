@@ -1,18 +1,14 @@
 import Objectif from '@/components/Objectif'
 
 interface Props {
-  objectifs: {
-    data: [
-      {
-        id: string
-        attribtues: {
-          titre: string
-          details: string
-          icon: string
-        }
-      }
-    ]
-  }
+  objectifs: [
+    {
+      id: string
+      titre: string
+      details: string
+      icon: string
+    }
+  ]
 }
 
 const Objectifs = ({ objectifs }: Props) => {
@@ -28,12 +24,12 @@ const Objectifs = ({ objectifs }: Props) => {
       </div>
       {objectifs && (
         <div className='flex flex-col justify-evenly gap-6 mt-3 md:grid md:grid-cols-4 md:grid-flow-col'>
-          {objectifs.data.map((obj: any) => (
+          {objectifs.map((obj: any) => (
             <Objectif
               key={obj.id}
-              titre={obj.attributes.titre}
-              details={obj.attributes.details}
-              icon={obj.attributes.icon}
+              titre={obj.titre}
+              details={obj.details}
+              icon={obj.icon}
             />
           ))}
         </div>
