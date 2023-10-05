@@ -6,6 +6,8 @@ import Objectifs from '@/components/Objectifs'
 import Hero from '@/components/Hero'
 import Horaires from '@/components/Horaires'
 
+export const revalidate = 900
+
 export default async function Home() {
   const objectifsCol = collection(db, 'objectifs')
   const objectifsSnap = await getDocs(objectifsCol)
