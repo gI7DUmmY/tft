@@ -52,7 +52,7 @@ const Footer = () => {
           </p>
         </div>
       </div>
-      <p className='mt-3 text-sm'>
+      <p className='mt-6 text-sm'>
         Copyright ©️ 2009 Toulouse Football de Table | Tous Doits
         R&eacute;serv&eacute;s
       </p>

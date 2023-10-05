@@ -21,10 +21,18 @@ const Navbar = () => {
   return (
     <nav className='fixed top-0 z-50 w-full bg-indigo-900 text-white px-3 font-sans'>
       {toggleMenu === true ? (
-        <MdClose
-          className='fixed top-2 right-2 text-purple-500 text-4xl md:hidden'
-          onClick={handleCloseMenu}
-        />
+        <div>
+          <Image
+            src={logo}
+            alt='logo TFT'
+            className='w-auto h-[100px] mx-auto mt-6'
+          />
+
+          <MdClose
+            className='fixed top-2 right-2 text-purple-500 text-4xl md:hidden'
+            onClick={handleCloseMenu}
+          />
+        </div>
       ) : (
         <MdMenu
           className='fixed top-2 right-2 text-purple-500 text-4xl md:hidden'
