@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { MdFacebook, MdWhatsapp } from 'react-icons/md'
+import { MdFacebook, MdLink, MdWhatsapp } from 'react-icons/md'
 import { FaDiscord } from 'react-icons/fa6'
 
 const Footer = () => {
@@ -17,6 +17,7 @@ const Footer = () => {
                 href='https://www.facebook.com/BabyfootToulouse'
                 target='_blank'
               >
+                <MdLink className='inline mr-1 align-middle' />
                 Toulouse Football de Table
               </a>
             </li>
@@ -25,6 +26,7 @@ const Footer = () => {
                 href='https://www.facebook.com/pages/F%C3%A9d%C3%A9ration-Fran%C3%A7aise-Football-de-Table-Baby-Foot/107819762597087'
                 target='_blank'
               >
+                <MdLink className='inline mr-1 align-middle' />
                 F&eacute;d&eacute;ration Fran&ccedil;aise de Football de Table
               </a>
             </li>

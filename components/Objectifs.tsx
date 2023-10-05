@@ -15,10 +15,10 @@ const Objectifs = ({ objectifs }: Props) => {
   return (
     <section className='w-full flex flex-col justify-center py-6'>
       <div>
-        <h1 className='text-center font-extrabold text-3xl text-slate-600 drop-shadow-black font-mono'>
+        <h1 className='text-center font-extrabold text-3xl text-slate-600 drop-shadow-white font-mono'>
           Notre objectif
         </h1>
-        <h2 className='text-center font-semibold text-lg text-slate-600 drop-shadow-black'>
+        <h2 className='text-center font-semibold text-lg text-slate-600 drop-shadow-white'>
           est de développer le Football de Table
         </h2>
       </div>
