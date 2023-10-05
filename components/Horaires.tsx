@@ -12,7 +12,9 @@ const Horaires = () => {
         <div>
           <MdLocationOn className='text-5xl  mx-auto mb-3 text-red-600' />
           <p>
-            <span className='font-bold'>Centre d'animation de Lalande</span>{' '}
+            <span className='font-bold'>
+              Centre d&apos;animation de Lalande
+            </span>{' '}
             <br />
             239 Avenue de Fronton <br />
             31200 TOULOUSE
