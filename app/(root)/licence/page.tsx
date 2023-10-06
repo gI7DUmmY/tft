@@ -11,13 +11,13 @@ const page = () => {
           Pourquoi jouer en club ?
         </h3>
         <p>
-          Tout simplement parce que c’est mieux ! Un club c’est le lieu de
+          Tout simplement parce que c’est mieux ! Un club c&apos;est le lieu de
           rendez-vous privilégié des gens qui partagent votre passion et qui ne
           demandent qu’à vous rencontrer. Un club met à votre disposition des
           locaux et du matériel de qualité et vous permet également de consacrer
           du temps à votre loisir. Dans un club vous trouverez toujours des
           personnes pour répondre à vos questions et pour vous aider à
-          progresser. N’attendez plus, rejoignez-nous !
+          progresser. N&apos;attendez plus, rejoignez-nous !
         </p>
         <p>
           Pour vous faire découvrir notre club, nous offrons aux personnes
@@ -25,8 +25,8 @@ const page = () => {
           faire une idée sur le fonctionnement du club.
         </p>
         <p>
-          Pour les membres d’autres clubs que le TFT, nous vous demanderons une
-          participation annuelle de 60€ vous donnant droit à un accès aux
+          Pour les membres d&apos;autres clubs que le TFT, nous vous demanderons
+          une participation annuelle de 60€ vous donnant droit à un accès aux
           entraînements.
         </p>
         <p>
@@ -82,14 +82,14 @@ const page = () => {
               <br />
             </span>
             La façon la plus simple et la plus économique que nous vous
-            proposons pour découvrir le football de table est la licence «
-            loisir ».
+            proposons pour découvrir le football de table est la licence
+            &quot;loisir&quot;.
           </li>
           <li className='block my-1'>
             <span className='underline'>La licence d&eacute;couverte : 2€</span>
             <br />
-            Cette licence vous permettra de participer aux tournois « Open
-            Decouverte » &#40;c’est à dire locaux&#41; et aux tournois non
+            Cette licence vous permettra de participer aux tournois &quot;Open
+            Decouverte&quot; &#40;c’est à dire locaux&#41; et aux tournois non
             officiels &#40;DYP&#41;.
           </li>
         </ul>
@@ -109,7 +109,7 @@ const page = () => {
               href='https://www.ffft.fr/coral-guide-dutilisation-pour-les-joueurs'
               className='text-blue-600'
             >
-              <MdLink className='mr-1 inline align-middle' /> Mode d'Emploi
+              <MdLink className='mr-1 inline align-middle' /> Mode d&apos;Emploi
             </a>
           </li>
           <li className='block my-1'>
@@ -121,8 +121,8 @@ const page = () => {
 
         <h4 className='font-medium text-sm uppercase my-1'>3- la licence</h4>
         <p>
-          Le TFT s’occupe de toutes les démarches administratives. <br /> Nous
-          tenons à préciser, qu’au sein du club les parties sont gratuites
+          Le TFT s&apos;occupe de toutes les démarches administratives. <br />{' '}
+          Nous tenons à préciser, qu’au sein du club les parties sont gratuites
           cependant il est nécessaire de se procurer ses propres poignées
           &#40;en vente au sein du club&#41;. <br /> Il ne vous reste plus qu’à
           jouer !
