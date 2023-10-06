@@ -4,7 +4,14 @@ import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import logo from '../public/logo.png'
-import { MdClose, MdEmail, MdEvent, MdMenu, MdMenuBook } from 'react-icons/md'
+import {
+  MdClose,
+  MdEmail,
+  MdEvent,
+  MdHome,
+  MdMenu,
+  MdMenuBook,
+} from 'react-icons/md'
 import { FaFileSignature } from 'react-icons/fa6'
 
 const Navbar = () => {
@@ -45,6 +52,16 @@ const Navbar = () => {
           <ul className='flex flex-col justify-start gap-6'>
             <li>
               <Link
+                href='/'
+                scroll={false}
+                onClick={() => setToggleMenu(false)}
+              >
+                <MdHome className='inline align-text-bottom mr-2' />
+                Accueil
+              </Link>
+            </li>
+            <li>
+              <Link
                 href='#'
                 scroll={false}
                 onClick={() => setToggleMenu(false)}
@@ -65,7 +82,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-                href='#'
+                href='/licence'
                 scroll={false}
                 onClick={() => setToggleMenu(false)}
               >
@@ -98,7 +115,7 @@ const Navbar = () => {
         </div>
         <Image src={logo} alt='logo TFT' className='h-24 w-auto' />
         <div className='flex justify-between gap-6'>
-          <Link href='#' scroll={false}>
+          <Link href='/licence' scroll={false}>
             Rejoignez Nous (Licence)
           </Link>
           <Link
