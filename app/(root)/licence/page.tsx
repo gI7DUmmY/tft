@@ -1,3 +1,4 @@
+import Accordeon from '@/components/Accordeon'
 import Image from 'next/image'
 import { MdLink } from 'react-icons/md'
 
@@ -6,7 +7,7 @@ const page = () => {
     <main className='w-full font-sans pt-[10vh] md:pt-[96px] text-black'>
       <h1 className='text-center font-mono text-xl'>INFO LICENCE</h1>
       <h2 className='text-lg text-center'>Rejoignez nous !</h2>
-      <div className='px-3 pt-3 text-justify text-sm page-content'>
+      <div className='px-2 pt-3 text-justify text-sm page-content md:text-base'>
         <h3 className='text-left text-base font-bold text-purple-500'>
           Pourquoi jouer en club ?
         </h3>
@@ -37,96 +38,98 @@ const page = () => {
         <h3 className='text-left text-base font-bold text-purple-500'>
           Prendre sa licence au TFT
         </h3>
-        <h4 className='font-medium text-sm uppercase my-1'>
-          1- choisissez la licence qui vous convient
-        </h4>
-        <p>
-          Choisissez votre licence, il y en a pour tous les goûts ! Votre
-          décision ne doit pas dépendre de votre niveau de jeu &#40;qui
-          augmentera avec le temps&#41;, mais plutôt du type de pratique et de
-          &quot;l’esprit&quot; que vous recherchez :
-        </p>
-        <ul>
-          <li>Est-ce-que vous aimez la comp&eacute;tition ?</li>
-          <li>
-            Est-ce que vous voulez devenir un &quot;pro&quot; du Football de
-            Table ou, simplement, prendre du plaisir sur un baby ?
-          </li>
-        </ul>
-        <p>
-          Il est bien sûr possible de passer en cours d’année de la licence
-          amateur à la licence compétition.
-        </p>
-        <Image
-          src='https://firebasestorage.googleapis.com/v0/b/tft---site.appspot.com/o/Licences-Tournois.jpg?alt=media&token=83280c2f-0f59-4403-98b4-a0457f931d73'
-          alt='tableau des licences'
-          width={723}
-          height={606}
-          className='mx-auto max-w-[90vw] h-auto'
-        />
-        <ul>
-          <li className='block my-1'>
-            <span className='underline'>
-              La licence comp&eacute;tition : 100€ &#40;40€ pour les moins de
-              18ans&#41;
-            </span>
-            <br />
-            La licence compétition donne accès aux mêmes avantages que la
-            licence loisir, et également la possibilité de participer à la
-            totalité des tournois de football de table, y compris nationaux et
-            internationaux.
-          </li>
-          <li className='block my-1'>
-            <span className='underline'>
-              La licence loisirs : 50€ &#40;30€ pour les moins de 18ans&#41;
+        <Accordeon header='1️⃣- choisissez la licence'>
+          <p>
+            Choisissez votre licence, il y en a pour tous les goûts ! Votre
+            décision ne doit pas dépendre de votre niveau de jeu &#40;qui
+            augmentera avec le temps&#41;, mais plutôt du type de pratique et de
+            &quot;l’esprit&quot; que vous recherchez :
+          </p>
+          <ul>
+            <li>Est-ce-que vous aimez la comp&eacute;tition ?</li>
+            <li>
+              Est-ce que vous voulez devenir un &quot;pro&quot; du Football de
+              Table ou, simplement, prendre du plaisir sur un baby ?
+            </li>
+          </ul>
+          <p>
+            Il est bien sûr possible de passer en cours d’année de la licence
+            amateur à la licence compétition.
+          </p>
+          <Image
+            src='https://firebasestorage.googleapis.com/v0/b/tft---site.appspot.com/o/Licences-Tournois.jpg?alt=media&token=83280c2f-0f59-4403-98b4-a0457f931d73'
+            alt='tableau des licences'
+            width={723}
+            height={606}
+            className='mx-auto max-w-[90vw] h-auto'
+          />
+          <ul>
+            <li className='block my-1'>
+              <span className='underline'>
+                La licence comp&eacute;tition : 100€ &#40;40€ pour les moins de
+                18ans&#41;
+              </span>
               <br />
-            </span>
-            La façon la plus simple et la plus économique que nous vous
-            proposons pour découvrir le football de table est la licence
-            &quot;loisir&quot;.
-          </li>
-          <li className='block my-1'>
-            <span className='underline'>La licence d&eacute;couverte : 2€</span>
-            <br />
-            Cette licence vous permettra de participer aux tournois &quot;Open
-            Decouverte&quot; &#40;c’est à dire locaux&#41; et aux tournois non
-            officiels &#40;DYP&#41;.
-          </li>
-        </ul>
-        <p className='font-semibold'>
-          Si vous n’arrivez pas à vous décider pas de panique, un responsable de
-          club sera ravi de vous conseiller.
-        </p>
+              La licence compétition donne accès aux mêmes avantages que la
+              licence loisir, et également la possibilité de participer à la
+              totalité des tournois de football de table, y compris nationaux et
+              internationaux.
+            </li>
+            <li className='block my-1'>
+              <span className='underline'>
+                La licence loisirs : 50€ &#40;30€ pour les moins de 18ans&#41;
+                <br />
+              </span>
+              La façon la plus simple et la plus économique que nous vous
+              proposons pour découvrir le football de table est la licence
+              &quot;loisir&quot;.
+            </li>
+            <li className='block my-1'>
+              <span className='underline'>
+                La licence d&eacute;couverte : 2€
+              </span>
+              <br />
+              Cette licence vous permettra de participer aux tournois &quot;Open
+              Decouverte&quot; &#40;c’est à dire locaux&#41; et aux tournois non
+              officiels &#40;DYP&#41;.
+            </li>
+          </ul>
+          <p className='font-semibold'>
+            Si vous n’arrivez pas à vous décider pas de panique, un responsable
+            de club sera ravi de vous conseiller.
+          </p>
+        </Accordeon>
 
-        <h4 className='font-medium text-sm uppercase my-1'>
-          2- inscrivez vous au club
-        </h4>
-        <ol>
-          <li className='block my-1'>
-            Rendez vous sur la plateforme officielle de la Fédération Française
-            de Footbla de Table CORAL :<br />
-            <a
-              href='https://www.ffft.fr/coral-guide-dutilisation-pour-les-joueurs'
-              className='text-blue-600'
-            >
-              <MdLink className='mr-1 inline align-middle' /> Mode d&apos;Emploi
-            </a>
-          </li>
-          <li className='block my-1'>
-            R&eacute;glez le montant de votre licence par virement bancaire au
-            RIB :<br />
-            FR76 1005 7192 1300 0207 5500 111
-          </li>
-        </ol>
+        <Accordeon header='2️⃣- inscrivez vous au club'>
+          <ol>
+            <li className='block my-1'>
+              Rendez vous sur la plateforme officielle de la Fédération
+              Française de Football de Table CORAL :<br />
+              <a
+                href='https://www.ffft.fr/coral-guide-dutilisation-pour-les-joueurs'
+                className='text-blue-600'
+              >
+                <MdLink className='mr-1 inline align-middle' /> Mode
+                d&apos;Emploi
+              </a>
+            </li>
+            <li className='block my-1'>
+              R&eacute;glez le montant de votre licence par virement bancaire au
+              RIB :<br />
+              FR76 1005 7192 1300 0207 5500 111
+            </li>
+          </ol>
+        </Accordeon>
 
-        <h4 className='font-medium text-sm uppercase my-1'>3- la licence</h4>
-        <p>
-          Le TFT s&apos;occupe de toutes les démarches administratives. <br />{' '}
-          Nous tenons à préciser, qu’au sein du club les parties sont gratuites
-          cependant il est nécessaire de se procurer ses propres poignées
-          &#40;en vente au sein du club&#41;. <br /> Il ne vous reste plus qu’à
-          jouer !
-        </p>
+        <Accordeon header='3️⃣- la licence'>
+          <p>
+            Le TFT s&apos;occupe de toutes les démarches administratives. <br />{' '}
+            Nous tenons à préciser, qu’au sein du club les parties sont
+            gratuites cependant il est nécessaire de se procurer ses propres
+            poignées &#40;en vente au sein du club&#41;. <br /> Il ne vous reste
+            plus qu’à jouer !
+          </p>
+        </Accordeon>
       </div>
     </main>
   )

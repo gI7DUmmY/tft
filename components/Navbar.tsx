@@ -113,7 +113,7 @@ const Navbar = () => {
             Calendrier des Tournois
           </a>
         </div>
-        <Image src={logo} alt='logo TFT' className='h-24 w-auto' />
+        <Image src={logo} alt='logo TFT' className='h-24 w-auto py-1' />
         <div className='flex justify-between gap-6'>
           <Link href='/licence' scroll={false}>
             Rejoignez Nous (Licence)
