@@ -2,10 +2,9 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import React from 'react'
 import { MdChevronRight } from 'react-icons/md'
 
-const layout = ({ children }: { children: React.ReactNode }) => {
+const Layout = ({ children }: { children: React.ReactNode }) => {
   const pathName = usePathname().split('/')
 
   return (
@@ -20,4 +19,4 @@ const layout = ({ children }: { children: React.ReactNode }) => {
   )
 }
 
-export default layout
+export default Layout
