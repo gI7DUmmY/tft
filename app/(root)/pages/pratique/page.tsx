@@ -16,10 +16,12 @@ const page = () => {
           <Carte
             titre='R&egrave;gles de jeu'
             texte='Consultez le r&egrave;glement officiel du football de table'
+            push='https://gi7dummy.github.io/itsf_rules/'
           />
           <Carte
             titre='Quiz ludique'
             texte='Testez vos connaissances des r&egrave;gles de jeu ! '
+            push='https://ffft-db.web.app/'
           />
         </div>
 
@@ -39,8 +41,13 @@ const page = () => {
           <Carte
             titre='FFFT'
             texte='F&eacute;d&eacute;ration Fran&ccedil;aise de Football de Table'
+            push='https://www.ffft.fr/'
           />
-          <Carte titre='ITSF' texte='International Table Soccer Federation' />
+          <Carte
+            titre='ITSF'
+            texte='International Table Soccer Federation'
+            push='https://www.tablesoccer.org/'
+          />
         </div>
       </div>
     </main>
