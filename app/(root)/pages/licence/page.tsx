@@ -4,7 +4,7 @@ import { MdLink } from 'react-icons/md'
 
 const page = () => {
   return (
-    <main className='w-full font-sans  text-black'>
+    <main className='w-full min-h-screen font-sans  text-black'>
       <h1 className='text-center font-mono text-xl'>INFO LICENCE</h1>
       <h2 className='text-lg text-center'>Rejoignez nous !</h2>
       <div className='px-2 pt-3 text-justify text-sm page-content md:text-base'>
@@ -101,8 +101,8 @@ const page = () => {
         </Accordeon>
 
         <Accordeon header='2️⃣- inscrivez vous au club'>
-          <ol>
-            <li className='block my-1'>
+          <ol className='list-decimal list-inside'>
+            <li className='my-1'>
               Rendez vous sur la plateforme officielle de la Fédération
               Française de Football de Table CORAL :<br />
               <a
@@ -113,7 +113,7 @@ const page = () => {
                 d&apos;Emploi
               </a>
             </li>
-            <li className='block my-1'>
+            <li className='my-1'>
               R&eacute;glez le montant de votre licence par virement bancaire au
               RIB :<br />
               FR76 1005 7192 1300 0207 5500 111

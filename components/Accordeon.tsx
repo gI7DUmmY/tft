@@ -15,7 +15,7 @@ const Accordeon = ({
   return (
     <div className='border-2 border-slate-500 rounded-lg shadow-sm shadow-slate-500 bg-slate-100 my-3 p-2'>
       <h4
-        className='flex flex-row justify-between font-medium text-sm uppercase my-1'
+        className='flex flex-row justify-between font-medium text-sm uppercase my-1 cursor-pointer'
         onClick={() => setActive(prev => !prev)}
       >
         {header}

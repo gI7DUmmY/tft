@@ -62,7 +62,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-                href='#'
+                href='/pages/pratique'
                 scroll={false}
                 onClick={() => setToggleMenu(false)}
               >
@@ -106,7 +106,7 @@ const Navbar = () => {
 
       <div className='flex flex-row justify-between items-center max-md:hidden'>
         <div className='flex justify-between gap-6'>
-          <Link href='#' scroll={false}>
+          <Link href='/pages/pratique' scroll={false}>
             Le Football de Table
           </Link>
           <a href='https://www.ffft.fr/tournois-2023-2024' target='_blank'>
