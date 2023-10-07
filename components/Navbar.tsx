@@ -82,7 +82,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-                href='/licence'
+                href='/pages/licence'
                 scroll={false}
                 onClick={() => setToggleMenu(false)}
               >
@@ -115,7 +115,7 @@ const Navbar = () => {
         </div>
         <Image src={logo} alt='logo TFT' className='h-24 w-auto py-1' />
         <div className='flex justify-between gap-6'>
-          <Link href='/licence' scroll={false}>
+          <Link href='/pages/licence' scroll={false}>
             Rejoignez Nous (Licence)
           </Link>
           <Link

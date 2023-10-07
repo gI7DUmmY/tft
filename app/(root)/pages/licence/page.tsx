@@ -4,7 +4,7 @@ import { MdLink } from 'react-icons/md'
 
 const page = () => {
   return (
-    <main className='w-full font-sans pt-[10vh] md:pt-[96px] text-black'>
+    <main className='w-full font-sans  text-black'>
       <h1 className='text-center font-mono text-xl'>INFO LICENCE</h1>
       <h2 className='text-lg text-center'>Rejoignez nous !</h2>
       <div className='px-2 pt-3 text-justify text-sm page-content md:text-base'>
