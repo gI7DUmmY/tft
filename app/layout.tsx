@@ -61,7 +61,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className={`${lato.variable} ${droid.variable}`}>{children}</body>
+      <body className={`${lato.variable} ${droid.variable} scroll-smooth`}>
+        {children}
+      </body>
     </html>
   )
 }
