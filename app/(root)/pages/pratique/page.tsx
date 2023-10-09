@@ -28,15 +28,37 @@ const page = () => {
         {/* les tables */}
         <h2 className='text-lg text-center mt-6'>Les tables ITSF</h2>
         <div className='flex flex-col items-center md:flex-row md:flex-wrap gap-6 justify-evenly my-2'>
-          <Carte titre='Bonzini B90' texte='Table Fran&ccedil;aise' />
-          <Carte titre='Leonhart Tournament' texte='Table Allemande' />
-          <Carte titre='Tornado Tour Edition' texte='Table Am&eacute;ricaine' />
-          <Carte titre='Garlando Wolrd Champion' texte='Table Autrichienne' />
-          <Carte titre='Roberto Adrenaline' texte='Table Italienne' />
+          <Carte
+            titre='Bonzini B90'
+            texte='Table Fran&ccedil;aise'
+            push='https://www.bonzini.com/fr/'
+          />
+          <Carte
+            titre='Leonhart Tournament'
+            texte='Table Allemande'
+            push='https://original-leonhart.com/?lang=en'
+          />
+          <Carte
+            titre='Tornado Tour Edition'
+            texte='Table Am&eacute;ricaine'
+            push='https://tornadofoosball.com/'
+          />
+          <Carte
+            titre='Garlando Wolrd Champion'
+            texte='Table Autrichienne'
+            push='https://foosballplanet.com/collections/garlando-foosball-tables'
+          />
+          <Carte
+            titre='Roberto Adrenaline'
+            texte='Table Italienne'
+            push='https://www.robertosport.it/en/'
+          />
         </div>
         <h2 className='text-lg text-center mt-6'>
           Les f&eacute;d&eacute;rations
         </h2>
+
+        {/* les federations */}
         <div className='flex flex-col items-center md:flex-row md:flex-wrap gap-6 justify-evenly my-2'>
           <Carte
             titre='FFFT'
