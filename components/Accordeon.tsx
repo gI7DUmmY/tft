@@ -13,16 +13,19 @@ const Accordeon = ({
   const [active, setActive] = useState(false)
 
   return (
-    <div className='border-2 border-slate-500 rounded-lg shadow-sm shadow-slate-500 bg-slate-100 my-3 p-2'>
+    <div className='border-2 border-slate-500 rounded-lg shadow-sm shadow-slate-500 bg-slate-100 mx-auto my-3 p-2 md:max-w-[1024px]'>
       <h4
-        className='flex flex-row justify-between font-medium text-sm uppercase my-1 cursor-pointer'
+        className='flex flex-row justify-between text-left font-medium text-sm uppercase my-1 cursor-pointer'
         onClick={() => setActive(prev => !prev)}
       >
         {header}
         {active === false ? (
-          <FiPlusCircle className='align-text-top text-lg text-blue-800 ml-3' />
+          <FiPlusCircle className='align-text-top text-lg text-blue-800 ml-3 shrink-0' />
         ) : (
-          <FiMinusCircle className='align-text-top text-lg text-blue-800 ml-3' />
+          <FiMinusCircle
+            className='align-text-top text-lg text-blue-800 ml-3 shrink-0'
+            shrink-0
+          />
         )}
       </h4>
       <div

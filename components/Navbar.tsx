@@ -104,27 +104,27 @@ const Navbar = () => {
         </div>
       )}
 
-      <div className='flex flex-row justify-between items-center max-md:hidden'>
-        <div className='flex justify-between gap-6'>
-          <Link href='/pages/pratique' scroll={false}>
-            Le Football de Table
-          </Link>
-          <a href='https://www.ffft.fr/tournois-2023-2024' target='_blank'>
-            Calendrier des Tournois
-          </a>
-        </div>
+      <div className='flex flex-row justify-evenly gap-9 items-center max-md:hidden'>
+        <Link href='/pages/pratique' scroll={false}>
+          <MdMenuBook className='inline align-text-bottom mr-1' />
+          Le Football de Table
+        </Link>
+        <a href='https://www.ffft.fr/tournois-2023-2024' target='_blank'>
+          <MdEvent className='inline align-text-bottom mr-1' />
+          Calendrier des Tournois
+        </a>
         <Image src={logo} alt='logo TFT' className='h-24 w-auto py-1' />
-        <div className='flex justify-between gap-6'>
-          <Link href='/pages/licence' scroll={false}>
-            Rejoignez Nous (Licence)
-          </Link>
-          <Link
-            href='mailto:contact@toulouseft.fr?subject=Contact-site-TFT'
-            scroll={false}
-          >
-            Contactez Nous
-          </Link>
-        </div>
+        <Link href='/pages/licence' scroll={false}>
+          <FaFileSignature className='inline align-text-bottom mr-1' />
+          Rejoignez Nous (Licence)
+        </Link>
+        <Link
+          href='mailto:contact@toulouseft.fr?subject=Contact-site-TFT'
+          scroll={false}
+        >
+          <MdEmail className='inline align-text-bottom mr-1' />
+          Contactez Nous
+        </Link>
       </div>
     </nav>
   )
