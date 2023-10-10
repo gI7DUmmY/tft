@@ -5,6 +5,7 @@ import { db } from '@/lib/App'
 import Objectifs from '@/components/Objectifs'
 import Hero from '@/components/Hero'
 import Horaires from '@/components/Horaires'
+import Youtube from '@/components/Youtube'
 
 export const revalidate = 900
 
@@ -28,6 +29,8 @@ export default async function Home() {
       <Objectifs objectifs={objectifsList} />
 
       <Horaires />
+
+      <Youtube />
     </main>
   )
 }
