@@ -12,7 +12,9 @@ import {
   MdMenu,
   MdMenuBook,
 } from 'react-icons/md'
+import { AiOutlineIdcard } from 'react-icons/ai'
 import { FaFileSignature } from 'react-icons/fa6'
+import { TbCircleLetterC } from 'react-icons/tb'
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false)
@@ -92,6 +94,16 @@ const Navbar = () => {
             </li>
             <li>
               <Link
+                href='/pages/about'
+                scroll={false}
+                onClick={() => setToggleMenu(false)}
+              >
+                <AiOutlineIdcard className='inline align-text-bottom mr-2' />
+                Qui Nous Sommes
+              </Link>
+            </li>
+            <li>
+              <Link
                 href='mailto:contact@toulouseft.fr?subject=Contact-site-TFT'
                 scroll={false}
                 onClick={() => setToggleMenu(false)}
@@ -104,7 +116,7 @@ const Navbar = () => {
         </div>
       )}
 
-      <div className='flex flex-row justify-evenly gap-9 items-center max-md:hidden'>
+      <div className='flex flex-row justify-between gap-6 items-center max-md:hidden'>
         <Link href='/pages/pratique' scroll={false}>
           <MdMenuBook className='inline align-text-bottom mr-1' />
           Le Football de Table
@@ -113,7 +125,20 @@ const Navbar = () => {
           <MdEvent className='inline align-text-bottom mr-1' />
           Calendrier des Tournois
         </a>
+        <a
+          href='https://app.tablesoccer.org/login'
+          target='_blank'
+          className='shrink-0'
+        >
+          <TbCircleLetterC className='inline align-text-bottom text-2xl' />
+          oral
+        </a>
+
         <Image src={logo} alt='logo TFT' className='h-24 w-auto py-1' />
+        <Link href='/pages/about' scroll={false}>
+          <AiOutlineIdcard className='inline align-text-bottom mr-2' />
+          Qui Nous Sommes
+        </Link>
         <Link href='/pages/licence' scroll={false}>
           <FaFileSignature className='inline align-text-bottom mr-1' />
           Rejoignez Nous (Licence)
