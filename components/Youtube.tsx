@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import logo from '@/public/logo.png'
 import { CiStreamOn } from 'react-icons/ci'
-import { BsCameraVideo } from 'react-icons/bs'
+import { BsBell } from 'react-icons/bs'
 
 const Youtube = () => {
   return (
@@ -12,11 +12,11 @@ const Youtube = () => {
         </h1>
       </div>
       <div className='flex flex-col justify-evenly items-center gap-3 bg-slate-200 text-center text-black min-h-[35vh] pt-6 md:min-h-[25vh] md:pt-12'>
-        <h3>
-          <BsCameraVideo className='inline mr-1 text-red-600 text-xl align-text-bottom' />
+        <h3 className='text-lg'>
+          <CiStreamOn className='inline mr-1 text-red-600 text-xl align-text-bottom' />
           Visionnez en Direct ou en Rediffusion les matchs de Football de Table
-          !
-          <CiStreamOn className='inline ml-1 text-red-600 text-xl align-text-bottom' />
+          : abonnez vous !
+          <BsBell className='inline ml-1 text-red-600 text-xl align-text-bottom' />
         </h3>
         <div className='flex flex-row flex-wrap justify-evenly items-center gap-16 p-6'>
           <a
