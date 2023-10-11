@@ -6,7 +6,9 @@ const page = () => {
       <h1 className='text-center font-mono text-xl capitalize'>la pratique</h1>
       <div className='px-2 pt-3 text-justify text-sm page-content md:text-base'>
         {/* les regles */}
-        <h2 className='text-lg text-center'>Les r&egrave;gles</h2>
+        <h2 className='text-lg text-center font-bold text-purple-500'>
+          Les r&egrave;gles
+        </h2>
         <div className='flex flex-col items-center md:flex-row md:flex-wrap gap-6 justify-evenly my-2'>
           <Carte
             titre='R&egrave;glement Int&eacute;rieur'
@@ -26,7 +28,9 @@ const page = () => {
         </div>
 
         {/* les tables */}
-        <h2 className='text-lg text-center mt-6'>Les tables ITSF</h2>
+        <h2 className='text-lg text-center mt-6 font-bold text-purple-500'>
+          Les tables ITSF
+        </h2>
         <div className='flex flex-col items-center md:flex-row md:flex-wrap gap-6 justify-evenly my-2'>
           <Carte
             titre='Bonzini B90'
@@ -54,7 +58,7 @@ const page = () => {
             push='https://www.robertosport.it/en/'
           />
         </div>
-        <h2 className='text-lg text-center mt-6'>
+        <h2 className='text-lg text-center mt-6 font-bold text-purple-500'>
           Les f&eacute;d&eacute;rations
         </h2>
 
