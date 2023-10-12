@@ -9,6 +9,11 @@ const page = () => {
         <h2 className='text-lg text-center'>Les r&egrave;gles</h2>
         <div className='flex flex-col items-center md:flex-row md:flex-wrap gap-6 justify-evenly my-2'>
           <Carte
+            titre='statuts'
+            texte="Consultez les statuts de l'association"
+            push='https://drive.google.com/file/d/10JY7a0nlOIWpjyAJo-X_wxkkVW0sMn9-/view?usp=sharing'
+          />
+          <Carte
             titre='R&egrave;glement Int&eacute;rieur'
             texte="Consultez le r&egrave;glement Int&eacute;rieur de l'association"
             push='/pages/pratique/reglement'
