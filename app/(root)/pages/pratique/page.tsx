@@ -53,7 +53,7 @@ const page = () => {
             push='https://tornadofoosball.com/'
           />
           <Carte
-            titre='Garlando Wolrd Champion'
+            titre='Garlando World Champion'
             texte='Table Autrichienne'
             push='https://foosballplanet.com/collections/garlando-foosball-tables'
           />

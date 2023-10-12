@@ -49,6 +49,7 @@ const Navbar = () => {
         />
       )}
 
+      {/* menu smartphones */}
       {toggleMenu === true && (
         <div className='h-screen text-xl pt-12 md:hidden'>
           <ul className='flex flex-col justify-start gap-6'>
@@ -80,6 +81,16 @@ const Navbar = () => {
               >
                 <MdEvent className='inline align-text-bottom mr-2' />
                 Calendrier des Tournois
+              </a>
+            </li>
+            <li>
+              <a
+                href='https://app.tablesoccer.org/login'
+                target='_blank'
+                className='shrink-0'
+              >
+                <TbCircleLetterC className='inline align-text-bottom text-2xl' />
+                oral
               </a>
             </li>
             <li>
@@ -116,6 +127,7 @@ const Navbar = () => {
         </div>
       )}
 
+      {/* menu md et + */}
       <div className='flex flex-row justify-between gap-6 items-center max-md:hidden'>
         <Link href='/pages/pratique' scroll={false}>
           <MdMenuBook className='inline align-text-bottom mr-1' />
