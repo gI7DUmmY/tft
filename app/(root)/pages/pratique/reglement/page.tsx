@@ -6,7 +6,7 @@ const pages = () => {
       <h1 className='text-center font-mono text-xl uppercase'>
         r&egrave;glement int&eacute;rieur de l&apos;association
       </h1>
-      <div className='px-2 pt-3 text-justify text-sm page-content md:text-base'>
+      <div className='px-2 pt-3 text-justify page-content'>
         <Accordeon header='article 1: principes g&eacute;n&eacute;raux'>
           <p>
             Le pr&eacute;sent r&egrave;glement int&eacute;rieur a pour but de

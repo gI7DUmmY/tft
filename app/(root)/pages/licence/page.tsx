@@ -7,8 +7,8 @@ const page = () => {
     <main className='w-full min-h-screen font-sans  text-black'>
       <h1 className='text-center font-mono text-xl'>INFO LICENCE</h1>
       <h2 className='text-lg text-center'>Rejoignez nous !</h2>
-      <div className='px-3 pt-3 text-justify text-sm page-content md:text-base md:px-9'>
-        <h3 className='text-left text-base font-bold text-purple-500'>
+      <div className='px-3 pt-3 text-justify page-content md:px-9'>
+        <h3 className='text-left font-bold text-purple-500'>
           Pourquoi jouer en club ?
         </h3>
         <p>
@@ -35,7 +35,7 @@ const page = () => {
           accéder aux entraînements librement.
         </p>
 
-        <h3 className='text-left text-base font-bold text-purple-500'>
+        <h3 className='text-left font-bold text-purple-500'>
           Prendre sa licence au TFT
         </h3>
         <Accordeon header='1️⃣- choisissez votre licence'>

@@ -22,12 +22,10 @@ const page = () => {
           <h3 className='text-center'>Cl&eacute;mentine Thomar</h3>
           <ul>
             <li className='font-semibold'>Pr&eacute;sidente</li>
-            <li className='text-sm'>
-              Membre de l&apos;&eacute;quipe de France F&eacute;minine
-            </li>
-            <li className='text-sm'>Championne du monde 2015/2017</li>
-            <li className='text-sm'>Championne de France 2019</li>
-            <li className='text-sm'>Vice championne de France 2023</li>
+            <li>Membre de l&apos;&eacute;quipe de France F&eacute;minine</li>
+            <li>Championne du monde 2015/2017</li>
+            <li>Championne de France 2019</li>
+            <li>Vice championne de France 2023</li>
           </ul>
         </div>
         <div className='w-full p-3 border-2 border-slate-400 rounded-2xl my-6 relative'>

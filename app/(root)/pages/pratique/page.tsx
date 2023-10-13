@@ -4,7 +4,7 @@ const page = () => {
   return (
     <main className='w-full min-h-screen font-sans  text-black'>
       <h1 className='text-center font-mono text-xl capitalize'>la pratique</h1>
-      <div className='px-2 pt-3 text-justify text-sm page-content md:text-base'>
+      <div className='px-2 pt-3 text-justify page-content md:text-base'>
         {/* les regles */}
         <h2 className='text-lg text-center font-bold text-purple-500'>
           Les r&egrave;gles
