@@ -11,16 +11,17 @@ const pages = () => {
           <p>
             Le pr&eacute;sent r&egrave;glement int&eacute;rieur a pour but de
             pr&eacute;ciser le fonctionnement de l&apos;association Toulouse
-            Football de Table (TFT), sis &agrave; &laquo; Chez Mr BENEY Xavier
-            La Masqui&egrave;re 31540 MONTEGUT LAURAGAIS &raquo;, dans le cadre
-            de ses statuts. Il a &eacute;t&eacute; adopt&eacute; en
-            assembl&eacute;e g&eacute;n&eacute;rale le 22/06/16. Il est remis
-            &agrave; l&apos;ensemble des membres ainsi qu&apos;&agrave; chaque
-            nouveau membre. Il s&apos;applique &agrave; tous les membres au
+            Football de Table (TFT), sis &agrave; &laquo; Centre
+            d&apos;Animation de Lalande &raquo;, dans le cadre de ses statuts.{' '}
+            <br />
+            Il a &eacute;t&eacute; adopt&eacute; en assembl&eacute;e
+            g&eacute;n&eacute;rale le 22/06/16. Il est remis &agrave;
+            l&apos;ensemble des membres ainsi qu&apos;&agrave; chaque nouveau
+            membre. <br /> Il s&apos;applique &agrave; tous les membres au
             m&ecirc;me titre que les statuts. L&apos;adh&eacute;sion en tant que
             membre du TFT vaut acceptation du pr&eacute;sent r&egrave;glement,
             totale sans restriction, par le membre ou son repr&eacute;sentant
-            l&eacute;gal
+            l&eacute;gal.
           </p>
         </Accordeon>
         <Accordeon header='ARTICLE 2: COTISATION'>
