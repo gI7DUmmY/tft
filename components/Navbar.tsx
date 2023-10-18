@@ -128,7 +128,7 @@ const Navbar = () => {
       )}
 
       {/* menu md et + */}
-      <div className='flex flex-row justify-between gap-6 items-center max-md:hidden'>
+      <div className='grid grid-cols-7 items-center gap-3 text-center max-md:hidden'>
         <Link href='/pages/pratique' scroll={false}>
           <MdMenuBook className='inline align-text-bottom mr-1' />
           Le Football de Table
@@ -146,7 +146,7 @@ const Navbar = () => {
           oral
         </a>
 
-        <Image src={logo} alt='logo TFT' className='h-24 w-auto py-1' />
+        <Image src={logo} alt='logo TFT' className='h-24 w-auto mx-auto py-1' />
         <Link href='/pages/about' scroll={false}>
           <AiOutlineIdcard className='inline align-text-bottom mr-2' />
           Qui Nous Sommes
