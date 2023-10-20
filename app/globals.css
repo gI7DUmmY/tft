@@ -32,7 +32,7 @@
 }
 
 .logo-chaine {
-  @apply h-16 w-auto 2xl:h-32;
+  @apply h-16 w-auto 2xl:h-20;
 }
 
 #hero {

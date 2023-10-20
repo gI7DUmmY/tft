@@ -23,7 +23,7 @@ const Objectifs = ({ objectifs }: Props) => {
         </h2>
       </div>
       {objectifs && (
-        <div className='flex flex-col justify-evenly gap-6 mt-3 md:grid md:grid-cols-4 md:grid-flow-col'>
+        <div className='flex flex-col justify-evenly gap-6 mt-9 md:grid md:grid-cols-4 md:grid-flow-col'>
           {objectifs.map((obj: any) => (
             <Objectif
               key={obj.id}

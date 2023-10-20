@@ -12,13 +12,13 @@ const Youtube = () => {
         </h1>
       </div>
       <div className='flex flex-col justify-evenly items-center gap-3 bg-slate-200 text-center text-black min-h-[35vh] pt-6 md:min-h-[25vh] md:pt-12'>
-        <h3 className='text-lg xl:text-2xl 2xl:text-5xl'>
-          <CiStreamOn className='inline mr-1 text-red-600 text-xl align-text-bottom xl:text-2xl 2xl:text-5xl' />
+        <h3 className='text-lg xl:text-2xl 2xl:text-3xl'>
+          <CiStreamOn className='inline mr-1 text-red-600 text-xl align-text-bottom xl:text-2xl 2xl:text-3xl' />
           Visionnez en Direct ou en Rediffusion les matchs de Football de Table
           : abonnez vous !
-          <BsBell className='inline ml-1 text-red-600 text-xl align-text-bottom xl:text-2xl 2xl:text-5xl' />
+          <BsBell className='inline ml-1 text-red-600 text-xl align-text-bottom xl:text-2xl 2xl:text-3xl' />
         </h3>
-        <div className='flex flex-row flex-wrap justify-evenly items-center gap-16 p-6 xl:text-xl 2xl:text-3xl xl:gap-24 2xl:gap-32'>
+        <div className='flex flex-row flex-wrap justify-evenly items-center gap-16 p-6 xl:text-xl 2xl:text-2xl xl:gap-24 2xl:gap-32'>
           <a
             href='https://www.youtube.com/@toulousefootballdetable6184/videos'
             target='_blank'
