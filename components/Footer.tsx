@@ -4,8 +4,8 @@ import { FaDiscord } from 'react-icons/fa6'
 
 const Footer = () => {
   return (
-    <footer className='p-6 w-full bg-indigo-900 text-white text-left font-sans'>
-      <div className='flex flex-col justify-evenly gap-6 md:flex-row'>
+    <footer className='p-6 w-full bg-indigo-900 text-white text-left font-sans xl:p-12 2xl:p-16'>
+      <div className='flex flex-col justify-evenly gap-6 md:flex-row lg:flex-none lg:grid lg:grid-cols-3'>
         <div className='shrink-0'>
           <h3 className='text-2xl pl-1'>
             <MdFacebook className='inline align-text-bottom text-blue-600' />

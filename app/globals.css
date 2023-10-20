@@ -31,6 +31,10 @@
   @apply border-2 border-slate-400 p-3 rounded-3xl shadow-lg bg-slate-200;
 }
 
+.logo-chaine {
+  @apply h-16 w-auto 2xl:h-32;
+}
+
 #hero {
   background-image: url('https://images.pexels.com/photos/595229/pexels-photo-595229.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
 }

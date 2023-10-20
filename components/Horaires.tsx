@@ -8,7 +8,7 @@ const Horaires = () => {
           Horaires des entraînements
         </h1>
       </div>
-      <div className='flex flex-row justify-evenly bg-indigo-900 text-center text-slate-50 h-[35vh] pt-6 md:h-[25vh] md:pt-12'>
+      <div className='flex flex-row justify-evenly gap-3 bg-indigo-900 text-center text-slate-50 py-6 px-2 lg:py-12'>
         <div>
           <MdLocationOn className='text-5xl  mx-auto mb-3 text-red-600' />
           <p>
