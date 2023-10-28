@@ -10,17 +10,7 @@ const page = () => {
           <h2 className='text-lg text-center font-bold text-purple-500 mb-9'>
             Les r&egrave;gles
           </h2>
-          <div className='flex flex-col items-center md:flex-row md:flex-wrap gap-6 justify-evenly my-2'>
-            <Carte
-              titre='statuts'
-              texte="Consultez les statuts de l'association"
-              push='https://drive.google.com/file/d/10JY7a0nlOIWpjyAJo-X_wxkkVW0sMn9-/view?usp=sharing'
-            />
-            <Carte
-              titre='R&egrave;glement Int&eacute;rieur'
-              texte="Consultez le r&egrave;glement Int&eacute;rieur de l'association"
-              push='/pages/pratique/reglement'
-            />
+          <div className='flex flex-col items-center gap-6 justify-evenly my-2 md:flex-row md:flex-wrap md:place-content-center md:gap-12'>
             <Carte
               titre='R&egrave;gles de jeu'
               texte='Consultez le r&egrave;glement officiel du football de table'
@@ -39,7 +29,7 @@ const page = () => {
           <h2 className='text-lg text-center mt-6 font-bold text-purple-500 mb-9'>
             Les tables ITSF
           </h2>
-          <div className='flex flex-col items-center md:flex-row md:flex-wrap gap-6 justify-evenly my-2'>
+          <div className='flex flex-col items-center gap-6 justify-evenly my-2 md:flex-row md:flex-wrap md:place-content-center md:gap-12'>
             <Carte
               titre='Bonzini B90'
               texte='Table Fran&ccedil;aise'
@@ -73,7 +63,7 @@ const page = () => {
           <h2 className='text-lg text-center mt-6 font-bold text-purple-500 mb-9'>
             Les f&eacute;d&eacute;rations
           </h2>
-          <div className='flex flex-col items-center md:flex-row md:flex-wrap gap-6 justify-evenly my-2'>
+          <div className='flex flex-col items-center gap-6 justify-evenly my-2 md:flex-row md:flex-wrap md:place-content-center md:gap-12'>
             <Carte
               titre='FFFT'
               texte='F&eacute;d&eacute;ration Fran&ccedil;aise de Football de Table'

@@ -128,7 +128,7 @@ const Navbar = () => {
       )}
 
       {/* menu md et + */}
-      <div className='grid grid-cols-7 items-center gap-3 text-center max-md:hidden'>
+      <div className='grid grid-cols-7 place-items-center gap-3 text-center max-md:hidden'>
         <Link href='/pages/pratique' scroll={false}>
           <MdMenuBook className='inline align-text-bottom mr-1' />
           Le Football de Table

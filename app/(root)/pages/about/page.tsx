@@ -1,3 +1,4 @@
+import Carte from '@/components/Carte'
 import Image from 'next/image'
 
 const page = () => {
@@ -6,6 +7,19 @@ const page = () => {
       <h1 className='text-center font-mono text-xl capitalize'>
         Qui sommes nous ?
       </h1>
+
+      <div className='flex flex-col items-center gap-6 justify-evenly my-2 md:flex-row md:place-content-center md:gap-12 md:my-6'>
+        <Carte
+          titre='statuts'
+          texte="Consultez les statuts de l'association"
+          push='https://drive.google.com/file/d/10JY7a0nlOIWpjyAJo-X_wxkkVW0sMn9-/view?usp=sharing'
+        />
+        <Carte
+          titre='R&egrave;glement Int&eacute;rieur'
+          texte="Consultez le r&egrave;glement Int&eacute;rieur de l'association"
+          push='/pages/about/reglement'
+        />
+      </div>
 
       <div className='w-full px-3 flex flex-col gap-8 items-center mx-auto text-left md:max-w-[425px]'>
         <h2 className='w-full capitalize mt-3 mb-12 ml-3 text-lg font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-purple-400'>
