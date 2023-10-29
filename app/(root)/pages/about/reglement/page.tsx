@@ -7,7 +7,7 @@ const pages = () => {
         r&egrave;glement int&eacute;rieur de l&apos;association
       </h1>
       <div className='px-2 pt-3 text-justify page-content'>
-        <Accordeon header='article 1: principes g&eacute;n&eacute;raux'>
+        <Accordeon header='article 1 : principes g&eacute;n&eacute;raux'>
           <p>
             Le pr&eacute;sent r&egrave;glement int&eacute;rieur a pour but de
             pr&eacute;ciser le fonctionnement de l&apos;association Toulouse
@@ -24,7 +24,7 @@ const pages = () => {
             l&eacute;gal.
           </p>
         </Accordeon>
-        <Accordeon header='ARTICLE 2: COTISATION'>
+        <Accordeon header='ARTICLE 2 : COTISATION'>
           <p>
             Le montant de la cotisation est fix&eacute; annuellement par
             l&apos;Assembl&eacute;e G&eacute;n&eacute;rale sur proposition du
@@ -42,7 +42,7 @@ const pages = () => {
             organis&eacute;es par le TFT.
           </p>
         </Accordeon>
-        <Accordeon header="ARTICLE 3: ORGANISATION DE L'ASSOCIATION DU TFT">
+        <Accordeon header="ARTICLE 3 : ORGANISATION DE L'ASSOCIATION DU TFT">
           <p>
             Le TFT se compose d&apos;un Comit&eacute; Directeur et d&apos;un
             Bureau dont les r&ocirc;les et les responsabilit&eacute;s sont
@@ -308,7 +308,7 @@ const pages = () => {
             de un mois suivant la date de la modification.
           </p>
         </Accordeon>
-        <Accordeon header='ARTICLE 8: DISPOSITIONS FINALES'>
+        <Accordeon header='ARTICLE 8 : DISPOSITIONS FINALES'>
           <p>
             Le pr&eacute;sent r&egrave;glement int&eacute;rieur a
             &eacute;t&eacute; soumis &agrave; l&#39;Assembl&eacute;e

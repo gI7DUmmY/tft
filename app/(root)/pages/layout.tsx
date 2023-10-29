@@ -10,7 +10,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
           Accueil
         </Link>
       </div>
-      {children}
+      <div className='2xl:max-w-[1500px] 2xl:mx-auto'>{children}</div>
     </div>
   )
 }
