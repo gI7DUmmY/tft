@@ -32,19 +32,19 @@
 }
 
 .logo-chaine {
-  @apply h-16 w-auto 2xl:h-20;
+  @apply h-16 w-auto mb-1 2xl:h-[75px];
 }
 
 #hero {
-  background-image: url('https://images.pexels.com/photos/595229/pexels-photo-595229.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/tft---site.appspot.com/o/Hero_bg.jpeg?alt=media&token=abb35837-c653-4cba-8539-d677972a5064');
 }
 
 #horaires {
-  background-image: url('https://images.pexels.com/photos/9003001/pexels-photo-9003001.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/tft---site.appspot.com/o/Horaires_bg.webp?alt=media&token=dff6d83a-6497-4238-9328-e219750c0b33');
 }
 
 #youtube {
-  background-image: url('https://images.pexels.com/photos/34407/pexels-photo.jpg');
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/tft---site.appspot.com/o/Youtube_bg.jpg?alt=media&token=8020d6fe-4a6d-4c39-9e1f-a575abd7f742');
 }
 
 #not-found {
