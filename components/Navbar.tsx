@@ -89,7 +89,7 @@ const Navbar = () => {
                 target='_blank'
                 className='shrink-0'
               >
-                <TbCircleLetterC className='inline align-text-bottom text-2xl' />
+                <TbCircleLetterC className='inline align-bottom text-2xl' />
                 oral
               </a>
             </li>
@@ -142,7 +142,7 @@ const Navbar = () => {
           target='_blank'
           className='shrink-0'
         >
-          <TbCircleLetterC className='inline align-text-bottom text-2xl' />
+          <TbCircleLetterC className='inline align-bottom text-2xl' />
           oral
         </a>
 
