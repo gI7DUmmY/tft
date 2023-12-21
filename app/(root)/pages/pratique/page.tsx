@@ -33,6 +33,7 @@ const page = () => {
             <Carte
               titre='Bonzini B90'
               texte='Table Fran&ccedil;aise'
+              image='https://firebasestorage.googleapis.com/v0/b/tft---site.appspot.com/o/bonzini.webp?alt=media&token=82c3d8df-377d-44d7-9e4f-4900082a713a'
               push='https://www.bonzini.com/fr/'
             />
             <Carte
