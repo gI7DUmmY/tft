@@ -33,27 +33,31 @@ const page = () => {
             <Carte
               titre='Bonzini B90'
               texte='Table Fran&ccedil;aise'
-              image='https://firebasestorage.googleapis.com/v0/b/tft---site.appspot.com/o/bonzini.webp?alt=media&token=82c3d8df-377d-44d7-9e4f-4900082a713a'
+              image='https://firebasestorage.googleapis.com/v0/b/tft---site.appspot.com/o/bonzini.png?alt=media&token=75f63d34-8809-45c1-a3e2-de87e928da00'
               push='https://www.bonzini.com/fr/'
             />
             <Carte
               titre='Leonhart Tournament'
               texte='Table Allemande'
+              image='https://firebasestorage.googleapis.com/v0/b/tft---site.appspot.com/o/leonhart.png?alt=media&token=b31d2272-cf92-4e5b-a2aa-acca07a72123'
               push='https://original-leonhart.com/?lang=en'
             />
             <Carte
               titre='Tornado Tour Edition'
               texte='Table Am&eacute;ricaine'
+              image='https://firebasestorage.googleapis.com/v0/b/tft---site.appspot.com/o/tornado.png?alt=media&token=e5d0e12e-39ac-4ae2-9590-40467467fe59'
               push='https://tornadofoosball.com/'
             />
             <Carte
               titre='Garlando World Champion'
               texte='Table Autrichienne'
+              image='https://firebasestorage.googleapis.com/v0/b/tft---site.appspot.com/o/garlando.png?alt=media&token=4f48df8e-db20-43d3-abc1-a308d99ccba8'
               push='https://foosballplanet.com/collections/garlando-foosball-tables'
             />
             <Carte
               titre='Roberto Adrenaline'
               texte='Table Italienne'
+              image='https://firebasestorage.googleapis.com/v0/b/tft---site.appspot.com/o/roberto.png?alt=media&token=055ef707-cf82-481e-811e-1d59b4d69285'
               push='https://www.robertosport.it/en/'
             />
           </div>

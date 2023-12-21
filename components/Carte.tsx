@@ -1,6 +1,6 @@
 'use client'
 
-import { useRouter } from 'next/navigation'
+import Image from 'next/image'
 
 interface Props {
   titre: string
@@ -10,12 +10,14 @@ interface Props {
 }
 
 const Carte = ({ titre, texte, push, image }: Props) => {
-  const router = useRouter()
+  const imageHeight = image ? 'lg:h-60' : 'lg:h-36'
 
   return (
     <>
       {!push && (
-        <div className='max-md:w-[90%] md:w-[40%] lg:w-[25%] xl:w-60 lg:h-32 border-2 border-slate-500 rounded-lg shadow-sm shadow-slate-500 bg-slate-100 p-2 cursor-pointer'>
+        <div
+          className={`${imageHeight} max-md:w-[90%] md:w-[40%] lg:w-[25%] xl:w-60 border-2 border-slate-500 rounded-lg shadow-sm shadow-slate-500 bg-slate-100 p-2 cursor-pointer`}
+        >
           <h4 className='font-medium text-center uppercase my-1'>{titre}</h4>
           <p className='text-center p-4'>{texte}</p>
         </div>
@@ -26,10 +28,21 @@ const Carte = ({ titre, texte, push, image }: Props) => {
           href={push}
           target='_blank'
           rel='noreferrer'
-          className='max-md:w-[90%] md:w-[40%] lg:w-[25%] xl:w-60 lg:h-32 border-2 border-slate-500 rounded-lg shadow-sm shadow-slate-500 bg-slate-100 p-2 cursor-pointer'
+          className={`${imageHeight} max-md:w-[90%] md:w-[40%] lg:w-[25%] xl:w-60 border-2 border-slate-500 rounded-lg shadow-sm shadow-slate-500 bg-slate-100 p-2 cursor-pointer`}
         >
-          <h4 className='font-medium text-center uppercase my-1'>{titre}</h4>
-          <p className='text-center p-4'>{texte}</p>
+          <h4 className='font-medium text-center uppercase my-1 h-12'>
+            {titre}
+          </h4>
+          {image && (
+            <Image
+              src={image}
+              alt='image'
+              width={120}
+              height={120}
+              className='object-contain w-auto max-w-[90%] h-28 mx-auto'
+            />
+          )}
+          <p className='text-center p-2'>{texte}</p>
         </a>
       )}
     </>
