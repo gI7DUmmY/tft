@@ -72,11 +72,13 @@ const page = () => {
             <Carte
               titre='FFFT'
               texte='F&eacute;d&eacute;ration Fran&ccedil;aise de Football de Table'
+              image='https://firebasestorage.googleapis.com/v0/b/tft---site.appspot.com/o/logo_ffft.png?alt=media&token=b99c1415-5130-40aa-966e-e341103fd295'
               push='https://www.ffft.fr/'
             />
             <Carte
               titre='ITSF'
               texte='International Table Soccer Federation'
+              image='https://firebasestorage.googleapis.com/v0/b/tft---site.appspot.com/o/logo_itsf.png?alt=media&token=02bea8e7-d30e-4557-8f1c-7fe605dbb512'
               push='https://www.tablesoccer.org/'
             />
           </div>
