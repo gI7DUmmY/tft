@@ -1,6 +1,42 @@
-import Carte from '@/components/Carte'
+import { collection, getDocs, orderBy, query } from 'firebase/firestore/lite'
+import { db } from '@/lib/App'
 
-const page = () => {
+import Carte from '@/components/Carte'
+import { TypeCarte, Cartes } from '@/types/Carte'
+
+export const revalidate = 900
+
+const page = async () => {
+  const tablesRef = collection(db, 'tables')
+  const tablesSnap = await getDocs(query(tablesRef, orderBy('titre')))
+
+  const tables: Cartes = []
+
+  tablesSnap.docs.map(doc =>
+    tables.push({
+      id: doc.id,
+      titre: doc.data().titre,
+      texte: doc.data().texte,
+      image: doc.data().image,
+      url: doc.data().url,
+    })
+  )
+
+  const federationsRef = collection(db, 'federations')
+  const federationsSnap = await getDocs(query(federationsRef, orderBy('titre')))
+
+  const federations: Cartes = []
+
+  federationsSnap.docs.map(doc =>
+    federations.push({
+      id: doc.id,
+      titre: doc.data().titre,
+      texte: doc.data().texte,
+      image: doc.data().image,
+      url: doc.data().url,
+    })
+  )
+
   return (
     <main className='w-full min-h-screen font-sans  text-black'>
       <h1 className='text-center font-mono text-xl capitalize'>la pratique</h1>
@@ -30,36 +66,16 @@ const page = () => {
             Les tables ITSF
           </h2>
           <div className='flex flex-col items-center gap-6 justify-evenly my-2 md:flex-row md:flex-wrap md:place-content-center md:gap-12'>
-            <Carte
-              titre='Bonzini B90'
-              texte='Table Fran&ccedil;aise'
-              image='https://firebasestorage.googleapis.com/v0/b/tft---site.appspot.com/o/bonzini.png?alt=media&token=75f63d34-8809-45c1-a3e2-de87e928da00'
-              push='https://www.bonzini.com/fr/'
-            />
-            <Carte
-              titre='Leonhart Tournament'
-              texte='Table Allemande'
-              image='https://firebasestorage.googleapis.com/v0/b/tft---site.appspot.com/o/leonhart.png?alt=media&token=b31d2272-cf92-4e5b-a2aa-acca07a72123'
-              push='https://original-leonhart.com/?lang=en'
-            />
-            <Carte
-              titre='Tornado Tour Edition'
-              texte='Table Am&eacute;ricaine'
-              image='https://firebasestorage.googleapis.com/v0/b/tft---site.appspot.com/o/tornado.png?alt=media&token=e5d0e12e-39ac-4ae2-9590-40467467fe59'
-              push='https://tornadofoosball.com/'
-            />
-            <Carte
-              titre='Garlando World Champion'
-              texte='Table Autrichienne'
-              image='https://firebasestorage.googleapis.com/v0/b/tft---site.appspot.com/o/garlando.png?alt=media&token=4f48df8e-db20-43d3-abc1-a308d99ccba8'
-              push='https://foosballplanet.com/collections/garlando-foosball-tables'
-            />
-            <Carte
-              titre='Roberto Adrenaline'
-              texte='Table Italienne'
-              image='https://firebasestorage.googleapis.com/v0/b/tft---site.appspot.com/o/roberto.png?alt=media&token=055ef707-cf82-481e-811e-1d59b4d69285'
-              push='https://www.robertosport.it/en/'
-            />
+            {tables.length > 0 &&
+              tables.map((table: TypeCarte) => (
+                <Carte
+                  key={table.id}
+                  titre={table.titre}
+                  texte={table.texte}
+                  image={table.image}
+                  push={table.url}
+                />
+              ))}
           </div>
         </section>
 
@@ -69,18 +85,16 @@ const page = () => {
             Les f&eacute;d&eacute;rations
           </h2>
           <div className='flex flex-col items-center gap-6 justify-evenly my-2 md:flex-row md:flex-wrap md:place-content-center md:gap-12'>
-            <Carte
-              titre='FFFT'
-              texte='F&eacute;d&eacute;ration Fran&ccedil;aise de Football de Table'
-              image='https://firebasestorage.googleapis.com/v0/b/tft---site.appspot.com/o/logo_ffft.png?alt=media&token=b99c1415-5130-40aa-966e-e341103fd295'
-              push='https://www.ffft.fr/'
-            />
-            <Carte
-              titre='ITSF'
-              texte='International Table Soccer Federation'
-              image='https://firebasestorage.googleapis.com/v0/b/tft---site.appspot.com/o/logo_itsf.png?alt=media&token=02bea8e7-d30e-4557-8f1c-7fe605dbb512'
-              push='https://www.tablesoccer.org/'
-            />
+            {federations.length > 0 &&
+              federations.map((fede: TypeCarte) => (
+                <Carte
+                  key={fede.id}
+                  titre={fede.titre}
+                  texte={fede.texte}
+                  image={fede.image}
+                  push={fede.url}
+                />
+              ))}
           </div>
         </section>
       </div>
