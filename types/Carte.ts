@@ -1,8 +1,8 @@
 export interface TypeCarte {
-  id: string
+  id?: string
   titre: string
   texte: string
-  image: string
+  image?: string
   url?: string
 }
 

@@ -1,20 +1,13 @@
-'use client'
-
 import Image from 'next/image'
 
-interface Props {
-  titre: string
-  texte: string
-  push?: string
-  image?: string
-}
+import { TypeCarte } from '@/types/Carte'
 
-const Carte = ({ titre, texte, push, image }: Props) => {
+const Carte = ({ titre, texte, url, image }: TypeCarte) => {
   const imageHeight = image ? 'lg:h-60' : 'lg:h-36'
 
   return (
     <>
-      {!push && (
+      {!url && (
         <div
           className={`${imageHeight} max-md:w-[90%] md:w-[40%] lg:w-[25%] xl:w-60 border-2 border-slate-500 rounded-lg shadow-sm shadow-slate-500 bg-slate-100 p-2 cursor-pointer`}
         >
@@ -34,9 +27,9 @@ const Carte = ({ titre, texte, push, image }: Props) => {
         </div>
       )}
 
-      {push && (
+      {url && (
         <a
-          href={push}
+          href={url}
           target='_blank'
           rel='noreferrer'
           className={`${imageHeight} max-md:w-[90%] md:w-[40%] lg:w-[25%] xl:w-60 border-2 border-slate-500 rounded-lg shadow-sm shadow-slate-500 bg-slate-100 p-2 cursor-pointer`}

@@ -12,12 +12,12 @@ const page = () => {
         <Carte
           titre='statuts'
           texte="Consultez les statuts de l'association"
-          push='https://drive.google.com/file/d/10JY7a0nlOIWpjyAJo-X_wxkkVW0sMn9-/view?usp=sharing'
+          url='https://drive.google.com/file/d/10JY7a0nlOIWpjyAJo-X_wxkkVW0sMn9-/view?usp=sharing'
         />
         <Carte
           titre='R&egrave;glement Int&eacute;rieur'
           texte="Consultez le r&egrave;glement Int&eacute;rieur de l'association"
-          push='/pages/about/reglement'
+          url='/pages/about/reglement'
         />
       </div>
 

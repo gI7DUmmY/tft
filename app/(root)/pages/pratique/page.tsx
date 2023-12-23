@@ -50,12 +50,12 @@ const page = async () => {
             <Carte
               titre='R&egrave;gles de jeu'
               texte='Consultez le r&egrave;glement officiel du football de table'
-              push='https://gi7dummy.github.io/itsf_rules/'
+              url='https://gi7dummy.github.io/itsf_rules/'
             />
             <Carte
               titre='Quiz ludique'
               texte='Testez vos connaissances des r&egrave;gles de jeu ! '
-              push='https://ffft-db.web.app/'
+              url='https://ffft-db.web.app/'
             />
           </div>
         </section>
@@ -73,7 +73,7 @@ const page = async () => {
                   titre={table.titre}
                   texte={table.texte}
                   image={table.image}
-                  push={table.url}
+                  url={table.url}
                 />
               ))}
           </div>
@@ -92,7 +92,7 @@ const page = async () => {
                   titre={fede.titre}
                   texte={fede.texte}
                   image={fede.image}
-                  push={fede.url}
+                  url={fede.url}
                 />
               ))}
           </div>
