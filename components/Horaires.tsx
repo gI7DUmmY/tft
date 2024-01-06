@@ -9,7 +9,7 @@ const Horaires = () => {
         </h1>
       </div>
       <div className='flex flex-row justify-evenly gap-3 bg-indigo-900 text-center text-slate-50 py-6 px-2 lg:py-12'>
-        <div>
+        <div className='w-1/2'>
           <MdLocationOn className='text-5xl  mx-auto mb-3 text-red-600' />
           <p>
             <span className='font-bold'>
@@ -20,7 +20,7 @@ const Horaires = () => {
             31200 TOULOUSE
           </p>
         </div>
-        <div>
+        <div className='w-1/2'>
           <MdAccessTime className='text-5xl mx-auto mb-3 text-amber-400' />
           <ul>
             <li>
@@ -30,6 +30,12 @@ const Horaires = () => {
             <li>
               <span className='font-bold uppercase'>vendredi</span> de 18h00 à
               22h00
+            </li>
+            <li>
+              <p className='mt-1 text-balance'>
+                <span className='font-bold uppercase'>fermeture</span> la
+                2&egrave;me semaine de chaque p&eacute;riode de vacances
+              </p>
             </li>
           </ul>
         </div>
