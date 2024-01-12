@@ -7,12 +7,14 @@ import Hero from '@/components/Hero'
 import Horaires from '@/components/Horaires'
 import Youtube from '@/components/Youtube'
 
+import { TypeObjectif } from '@/types/Objectif'
+
 export const revalidate = 900
 
 export default async function Home() {
   const objectifsCol = collection(db, 'objectifs')
   const objectifsSnap = await getDocs(objectifsCol)
-  const objectifsList: any = []
+  const objectifsList: TypeObjectif[] = []
   objectifsSnap.docs.map(doc =>
     objectifsList.push({
       id: doc.id,

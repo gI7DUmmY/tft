@@ -1,13 +1,9 @@
 import Image from 'next/image'
 import { MdSchool, MdModelTraining, MdEvent } from 'react-icons/md'
 
-interface Props {
-  titre: string
-  details: string
-  icon: string
-}
+import { TypeObjectif } from '@/types/Objectif'
 
-const HeroCard = ({ titre, details, icon }: Props) => {
+const Objectif = ({ titre, details, icon }: TypeObjectif) => {
   return (
     <div className='flex flex-col gap-3 justify-start items-center text-center text-black px-3'>
       {icon === 'school' && (
@@ -41,4 +37,4 @@ const HeroCard = ({ titre, details, icon }: Props) => {
   )
 }
 
-export default HeroCard
+export default Objectif
