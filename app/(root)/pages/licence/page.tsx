@@ -1,8 +1,19 @@
 import Accordeon from '@/components/Accordeon'
 import Image from 'next/image'
 import { MdLink } from 'react-icons/md'
+import {
+  PiNumberCircleOneDuotone,
+  PiNumberCircleTwoDuotone,
+  PiNumberCircleThreeDuotone,
+} from 'react-icons/pi'
 
 const page = () => {
+  const numberClasses = 'mr-1 inline align-bottom text-xl fill-blue-800'
+
+  const one = <PiNumberCircleOneDuotone className={numberClasses} />
+  const two = <PiNumberCircleTwoDuotone className={numberClasses} />
+  const three = <PiNumberCircleThreeDuotone className={numberClasses} />
+
   return (
     <main className='w-full min-h-screen font-sans  text-black'>
       <h1 className='text-center font-mono text-xl'>INFO LICENCE</h1>
@@ -38,7 +49,7 @@ const page = () => {
         <h3 className='text-left font-bold text-purple-500 my-6'>
           Prendre sa licence au TFT
         </h3>
-        <Accordeon header='1️⃣- choisissez votre licence'>
+        <Accordeon header='choisissez votre licence' number={one}>
           <p>
             Choisissez votre licence, il y en a pour tous les goûts ! Votre
             décision ne doit pas dépendre de votre niveau de jeu &#40;qui
@@ -100,7 +111,7 @@ const page = () => {
           </p>
         </Accordeon>
 
-        <Accordeon header='2️⃣- inscrivez vous au club'>
+        <Accordeon header='inscrivez vous au club' number={two}>
           <ol className='list-decimal list-inside'>
             <li className='my-1'>
               Rendez vous sur la plateforme officielle de la Fédération
@@ -121,7 +132,7 @@ const page = () => {
           </ol>
         </Accordeon>
 
-        <Accordeon header='3️⃣- la licence'>
+        <Accordeon header='la licence' number={three}>
           <p>
             Le TFT s&apos;occupe de toutes les démarches administratives. <br />{' '}
             Nous tenons à préciser, qu’au sein du club les parties sont

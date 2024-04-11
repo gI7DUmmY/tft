@@ -6,9 +6,11 @@ import { FiMinusCircle, FiPlusCircle } from 'react-icons/fi'
 const Accordeon = ({
   children,
   header,
+  number,
 }: {
   children: React.ReactNode
   header: string
+  number?: React.ReactNode
 }) => {
   const [active, setActive] = useState(false)
 
@@ -18,14 +20,14 @@ const Accordeon = ({
         className='flex flex-row justify-between text-left font-medium text-sm uppercase my-1 cursor-pointer'
         onClick={() => setActive(prev => !prev)}
       >
-        {header}
+        <div>
+          {number}
+          {header}
+        </div>
         {active === false ? (
-          <FiPlusCircle className='align-text-top text-lg text-blue-800 ml-3 shrink-0' />
+          <FiPlusCircle className='align-text-top text-lg stroke-blue-800 ml-3 shrink-0' />
         ) : (
-          <FiMinusCircle
-            className='align-text-top text-lg text-blue-800 ml-3 shrink-0'
-            shrink-0
-          />
+          <FiMinusCircle className='align-text-top text-lg stroke-blue-800 ml-3 shrink-0' />
         )}
       </h4>
       <div
