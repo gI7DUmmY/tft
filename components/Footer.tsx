@@ -13,22 +13,22 @@ const Footer = () => {
           </h3>
           <ul>
             <li>
-              <a
+              <Link
                 href='https://www.facebook.com/BabyfootToulouse'
                 target='_blank'
               >
                 <MdLink className='inline mr-1 align-middle' />
                 Toulouse Football de Table
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href='https://www.facebook.com/pages/F%C3%A9d%C3%A9ration-Fran%C3%A7aise-Football-de-Table-Baby-Foot/107819762597087'
                 target='_blank'
               >
                 <MdLink className='inline mr-1 align-middle' />
                 F&eacute;d&eacute;ration Fran&ccedil;aise de Football de Table
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

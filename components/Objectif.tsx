@@ -28,7 +28,7 @@ const Objectif = ({ titre, details, icon }: TypeObjectif) => {
           alt='logo fede'
           width={50}
           height={50}
-          className='rounded-full mx-auto'
+          className='rounded-full mx-auto w-auto'
         />
       )}
       <h3 className='block uppercase'>{titre}</h3>

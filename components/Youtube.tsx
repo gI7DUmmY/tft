@@ -2,6 +2,7 @@ import Image from 'next/image'
 import logo from '@/public/logo.png'
 import { CiStreamOn } from 'react-icons/ci'
 import { BsBell } from 'react-icons/bs'
+import Link from 'next/link'
 
 const Youtube = () => {
   return (
@@ -19,7 +20,7 @@ const Youtube = () => {
           <BsBell className='inline ml-1 text-red-600 text-xl align-text-bottom xl:text-2xl 2xl:text-3xl' />
         </h3>
         <div className='flex flex-row flex-wrap justify-evenly items-center gap-16 p-6 xl:text-xl 2xl:text-2xl xl:gap-24 2xl:gap-32'>
-          <a
+          <Link
             href='https://www.youtube.com/@toulousefootballdetable6184/videos'
             target='_blank'
             className='block'
@@ -32,8 +33,8 @@ const Youtube = () => {
               className='mx-auto logo-chaine'
             />
             <p>TFT</p>
-          </a>
-          <a
+          </Link>
+          <Link
             href='https://www.youtube.com/@PhoenixATB/videos'
             target='_blank'
             className='block'
@@ -46,8 +47,8 @@ const Youtube = () => {
               className='mx-auto rounded-full logo-chaine'
             />
             <p>ATB</p>
-          </a>
-          <a
+          </Link>
+          <Link
             href='https://www.youtube.com/@a.sevrylescoyotesbaby-foot4717/videos'
             target='_blank'
             className='block'
@@ -60,8 +61,8 @@ const Youtube = () => {
               className='mx-auto rounded-full logo-chaine'
             />
             <p>A.S. Evry</p>
-          </a>
-          <a
+          </Link>
+          <Link
             href='https://www.youtube.com/@ftbmbabyfootbordeaux-merig2955/videos'
             target='_blank'
             className='block'
@@ -74,8 +75,8 @@ const Youtube = () => {
               className='mx-auto rounded-full logo-chaine'
             />
             <p>FTBM</p>
-          </a>
-          <a
+          </Link>
+          <Link
             href='https://www.youtube.com/@clubwbaby-footbeziers3206/videos'
             target='_blank'
             className='block'
@@ -88,7 +89,21 @@ const Youtube = () => {
               className='mx-auto rounded-full logo-chaine'
             />
             <p>B&eacute;zier</p>
-          </a>
+          </Link>
+          <Link
+            href='https://www.youtube.com/@ardennesbaby-foot6429/videos'
+            target='_blank'
+            className='block'
+          >
+            <Image
+              src='https://firebasestorage.googleapis.com/v0/b/tft---site.appspot.com/o/Ardennes%20baby-foot.jpg?alt=media&token=7bae36d5-d3db-45aa-aca0-fc8209ef6806'
+              alt='logo Bezier'
+              width={50}
+              height={50}
+              className='mx-auto rounded-full logo-chaine'
+            />
+            <p>Ardennes</p>
+          </Link>
         </div>
       </div>
     </section>

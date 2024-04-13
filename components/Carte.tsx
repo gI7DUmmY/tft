@@ -1,6 +1,7 @@
 import Image from 'next/image'
 
 import { TypeCarte } from '@/types/Carte'
+import Link from 'next/link'
 
 const Carte = ({ titre, texte, url, image }: TypeCarte) => {
   const imageHeight = image ? 'lg:h-60' : 'lg:h-36'
@@ -28,7 +29,7 @@ const Carte = ({ titre, texte, url, image }: TypeCarte) => {
       )}
 
       {url && (
-        <a
+        <Link
           href={url}
           target='_blank'
           rel='noreferrer'
@@ -47,7 +48,7 @@ const Carte = ({ titre, texte, url, image }: TypeCarte) => {
             />
           )}
           <p className='text-center'>{texte}</p>
-        </a>
+        </Link>
       )}
     </>
   )
