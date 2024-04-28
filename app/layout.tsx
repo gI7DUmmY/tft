@@ -39,12 +39,12 @@ export const metadata: Metadata = {
     'twitter:image':
       'https://firebasestorage.googleapis.com/v0/b/tft---site.appspot.com/o/tft_officiel.png?alt=media&token=eaabc2b1-206a-4aff-bed4-025ed922cbfe',
     'twitter:card': 'summary_large_image',
-    'twitter:domain': 'tft-eight.vercel.app',
-    'twitter:url': 'https://tft-eight.vercel.app/',
+    'twitter:domain': 'toulouseft.fr',
+    'twitter:url': 'https://toulouseft.fr/',
     'twitter:title': 'Toulouse Football de Table',
     'twitter:description':
       "Toulouse Football de Table : club de babyfoot officiel toulousain. Loisirs, competition, accompagnement, animations, esprit d'equipe pour toutes et tous sont au rendez-vous !",
-    'og:url': 'https://tft-eight.vercel.app/',
+    'og:url': 'https://toulouseft.fr/',
     'og:image':
       'https://firebasestorage.googleapis.com/v0/b/tft---site.appspot.com/o/tft_officiel.png?alt=media&token=eaabc2b1-206a-4aff-bed4-025ed922cbfe',
     'og:type': 'website',
