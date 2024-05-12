@@ -4,7 +4,7 @@ import Image from 'next/image'
 const page = () => {
   return (
     <main className='w-full min-h-screen font-sans mx-auto text-black md:max-w-[85%]'>
-      <h1 className='text-center font-mono text-xl capitalize'>
+      <h1 className='text-center font-mono prose-2xl capitalize'>
         Qui sommes nous ?
       </h1>
 
@@ -22,7 +22,7 @@ const page = () => {
       </div>
 
       <div className='w-full px-3 flex flex-col gap-8 items-center mx-auto text-left md:max-w-[425px]'>
-        <h2 className='w-full capitalize mt-3 mb-12 ml-3 text-lg font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-purple-400'>
+        <h2 className='w-full capitalize mt-3 mb-12 ml-3 prose-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-purple-400'>
           le bureau
         </h2>
         <div className='w-full p-3 border-2 border-slate-400 rounded-2xl my-6 relative'>
@@ -73,7 +73,7 @@ const page = () => {
       </div>
 
       <div className='w-full px-3 flex flex-col gap-8 items-center mx-auto text-left md:max-w-[425px]'>
-        <h2 className='w-full capitalize mt-3 mb-12 ml-3 text-lg font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-purple-400'>
+        <h2 className='w-full capitalize mt-3 mb-12 ml-3 prose-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-purple-400'>
           Entraîneur/Coach
         </h2>
 

@@ -39,11 +39,13 @@ const page = async () => {
 
   return (
     <main className='w-full min-h-screen font-sans  text-black'>
-      <h1 className='text-center font-mono text-xl capitalize'>la pratique</h1>
+      <h1 className='text-center font-mono prose-2xl capitalize'>
+        la pratique
+      </h1>
       <div className='px-2 pt-3 text-justify page-content md:text-base'>
         {/* les regles */}
         <section className='mt-12'>
-          <h2 className='text-lg text-center font-bold text-purple-500 mb-9'>
+          <h2 className='prose-xl text-center font-bold text-purple-500 mb-9'>
             Les r&egrave;gles
           </h2>
           <div className='flex flex-col items-center gap-6 justify-evenly my-2 md:flex-row md:flex-wrap md:place-content-center md:gap-12'>
@@ -62,7 +64,7 @@ const page = async () => {
 
         {/* les tables */}
         <section className='mt-12'>
-          <h2 className='text-lg text-center mt-6 font-bold text-purple-500 mb-9'>
+          <h2 className='prose-xl text-center mt-6 font-bold text-purple-500 mb-9'>
             Les tables ITSF
           </h2>
           <div className='flex flex-col items-center gap-6 justify-evenly my-2 md:flex-row md:flex-wrap md:place-content-center md:gap-12'>
@@ -81,7 +83,7 @@ const page = async () => {
 
         {/* les federations */}
         <section className='mt-12'>
-          <h2 className='text-lg text-center mt-6 font-bold text-purple-500 mb-9'>
+          <h2 className='prose-xl text-center mt-6 font-bold text-purple-500 mb-9'>
             Les f&eacute;d&eacute;rations
           </h2>
           <div className='flex flex-col items-center gap-6 justify-evenly my-2 md:flex-row md:flex-wrap md:place-content-center md:gap-12'>

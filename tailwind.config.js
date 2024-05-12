@@ -20,5 +20,8 @@ module.exports = {
       },
     },
   },
-  plugins: [require('tailwindcss-patterns')],
+  plugins: [
+    require('tailwindcss-patterns'),
+    require('@tailwindcss/typography'),
+  ],
 }
