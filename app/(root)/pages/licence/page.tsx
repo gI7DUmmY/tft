@@ -1,6 +1,7 @@
 import Accordeon from '@/components/Accordeon'
 import Image from 'next/image'
 import { BsFiletypePdf } from 'react-icons/bs'
+import { MdLink } from 'react-icons/md'
 import {
   PiNumberCircleOneDuotone,
   PiNumberCircleTwoDuotone,
@@ -18,7 +19,7 @@ const page = () => {
     <main className='w-full min-h-screen font-sans  text-black'>
       <h1 className='text-center font-mono prose-2xl'>INFO LICENCE</h1>
       <h2 className='text-lg text-center'>Rejoignez nous !</h2>
-      <div className='px-3 pt-3 text-justify page-content prose md:px-9'>
+      <div className='px-3 pt-3 text-justify page-content md:px-9'>
         <h3 className='text-left font-bold text-purple-500 prose-xl my-6'>
           Pourquoi jouer en club ?
         </h3>
@@ -50,7 +51,7 @@ const page = () => {
           Prendre sa licence au TFT
         </h3>
         <Accordeon header='choisissez votre licence' number={one}>
-          <div className='prose'>
+          <div>
             <p>
               Choisissez votre licence, il y en a pour tous les goûts ! Votre
               décision ne doit pas dépendre de votre niveau de jeu &#40;qui
@@ -114,7 +115,7 @@ const page = () => {
         </Accordeon>
 
         <Accordeon header='inscrivez vous au club' number={two}>
-          <ol className='list-decimal list-inside prose'>
+          <ol className='list-decimal list-inside'>
             <li className='my-1'>
               Rendez vous sur la plateforme officielle de la Fédération
               Française de Football de Table CORAL :<br />
@@ -122,8 +123,7 @@ const page = () => {
                 href='https://www.ffft.fr/coral-guide-dutilisation-pour-les-joueurs'
                 className='text-blue-600 no-underline'
               >
-                <BsFiletypePdf className='inline align-baseline' /> Mode
-                d&apos;Emploi
+                <MdLink className='inline align-middle' /> Mode d&apos;Emploi
               </a>
             </li>
             <li className='my-1'>
@@ -135,7 +135,7 @@ const page = () => {
         </Accordeon>
 
         <Accordeon header='la licence' number={three}>
-          <p className='prose'>
+          <p>
             Le TFT s&apos;occupe de toutes les démarches administratives. <br />{' '}
             Nous tenons à préciser, qu’au sein du club les parties sont
             gratuites cependant il est nécessaire de se procurer ses propres
