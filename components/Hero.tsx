@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Hero = () => {
   return (
     <section className='w-full h-screen parallax md:h-[92vh]' id='hero'>
