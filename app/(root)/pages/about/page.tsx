@@ -40,6 +40,7 @@ const page = () => {
             <li>Championne du monde 2015/2017</li>
             <li>Championne de France 2019</li>
             <li>Vice championne de France 2023</li>
+            <li>Vice championne du monde 2024</li>
           </ul>
         </div>
         <div className='w-full p-3 border-2 border-slate-400 rounded-2xl my-6 relative'>
