@@ -19,7 +19,21 @@ const Youtube = () => {
           : abonnez vous !
           <BsBell className='inline ml-1 text-red-600 text-xl align-text-bottom xl:text-2xl 2xl:text-3xl' />
         </h3>
-        <div className='flex flex-row flex-wrap justify-evenly items-center gap-16 p-6 xl:text-xl 2xl:text-2xl xl:gap-24 2xl:gap-32'>
+        <div className='flex flex-row flex-wrap justify-evenly items-center gap-16 p-6 md:max-w-md lg:max-w-none xl:text-xl 2xl:text-2xl xl:gap-24 2xl:gap-32'>
+          <Link
+            href='https://youtube.com/@tables0ccer?si=sF-yNxDZdcFYr8l1'
+            target='_blank'
+            className='block'
+          >
+            <Image
+              src='https://firebasestorage.googleapis.com/v0/b/tft---site.appspot.com/o/ITSF_yt.jpg?alt=media&token=82bc7c26-48a7-4e74-a2c1-f007b6777602'
+              alt='logo ITSF'
+              width={50}
+              height={50}
+              className='mx-auto rounded-full logo-chaine'
+            />
+            <p>ITSF</p>
+          </Link>
           <Link
             href='https://www.youtube.com/@toulousefootballdetable6184/videos'
             target='_blank'
