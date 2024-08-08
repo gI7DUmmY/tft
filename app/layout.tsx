@@ -31,6 +31,7 @@ const lato = localFont({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://toulouseft.fr'),
   title: 'Toulouse Football de Table',
   description:
     "Toulouse Football de Table : club de babyfoot officiel toulousain. Loisirs, competition, accompagnement, animations, esprit d'equipe pour toutes et tous sont au rendez-vous !",
