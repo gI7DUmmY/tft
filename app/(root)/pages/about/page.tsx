@@ -68,7 +68,7 @@ const page = () => {
 
         {/* secretaire */}
         <div className='w-full p-3 border-2 border-slate-400 rounded-2xl my-6 relative'>
-          <BsPersonCircle className='absolute h-20 w-20 text-slate-600 inset-x-0 -top-[67px] mx-auto' />
+          <BsPersonCircle className='absolute h-[80px] w-[80px] text-slate-600 inset-x-0 -top-[67px] mx-auto' />
           <h3 className='text-center'>Poste à pourvoir</h3>
           <ul>
             <li className='font-semibold'>Secr&eacute;taire</li>

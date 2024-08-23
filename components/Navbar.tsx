@@ -15,6 +15,7 @@ import {
 import { AiOutlineIdcard } from 'react-icons/ai'
 import { FaFileSignature } from 'react-icons/fa6'
 import { TbCircleLetterC } from 'react-icons/tb'
+import { PiCaretRightThin } from 'react-icons/pi'
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false)
@@ -111,6 +112,26 @@ const Navbar = () => {
               >
                 <AiOutlineIdcard className='inline align-text-bottom mr-2' />
                 Qui Nous Sommes
+              </Link>
+            </li>
+            <li className='ml-4'>
+              <Link
+                href='https://drive.google.com/file/d/10JY7a0nlOIWpjyAJo-X_wxkkVW0sMn9-/view?usp=sharing'
+                target='_blank'
+                onClick={() => setToggleMenu(false)}
+              >
+                <PiCaretRightThin className='inline align-text-bottom mr-2' />
+                Les statuts
+              </Link>
+            </li>
+            <li className='ml-4'>
+              <Link
+                href='/pages/about/reglement'
+                scroll={false}
+                onClick={() => setToggleMenu(false)}
+              >
+                <PiCaretRightThin className='inline align-text-bottom mr-2' />
+                R&egrave;glement Int&eacute;rieur
               </Link>
             </li>
             <li>
