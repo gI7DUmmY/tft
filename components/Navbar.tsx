@@ -114,26 +114,6 @@ const Navbar = () => {
                 Qui Nous Sommes
               </Link>
             </li>
-            <li className='ml-4'>
-              <Link
-                href='https://drive.google.com/file/d/10JY7a0nlOIWpjyAJo-X_wxkkVW0sMn9-/view?usp=sharing'
-                target='_blank'
-                onClick={() => setToggleMenu(false)}
-              >
-                <PiCaretRightThin className='inline align-text-bottom mr-2' />
-                Les statuts
-              </Link>
-            </li>
-            <li className='ml-4'>
-              <Link
-                href='/pages/about/reglement'
-                scroll={false}
-                onClick={() => setToggleMenu(false)}
-              >
-                <PiCaretRightThin className='inline align-text-bottom mr-2' />
-                R&egrave;glement Int&eacute;rieur
-              </Link>
-            </li>
             <li>
               <Link
                 href='mailto:contact@toulouseft.fr?subject=Contact-site-TFT'
@@ -152,11 +132,11 @@ const Navbar = () => {
       <div className='grid grid-cols-7 place-items-center gap-3 text-center max-md:hidden'>
         <Link href='/pages/pratique' scroll={false}>
           <MdMenuBook className='inline align-text-bottom mr-1' />
-          Le Football de Table
+          Pratiquer
         </Link>
         <a href='https://www.ffft.fr/tournois-2023-2024' target='_blank'>
           <MdEvent className='inline align-text-bottom mr-1' />
-          Calendrier des Tournois
+          Tournois
         </a>
         <a
           href='https://app.tablesoccer.org/login'
@@ -168,17 +148,18 @@ const Navbar = () => {
         </a>
 
         <Image src={logo} alt='logo TFT' className='h-24 w-auto mx-auto py-1' />
-        <Link href='/pages/about' scroll={false}>
+        <Link href='/pages/about' scroll={false} className='text-balance'>
           <AiOutlineIdcard className='inline align-text-bottom mr-2' />
           Qui Nous Sommes
         </Link>
         <Link href='/pages/licence' scroll={false}>
           <FaFileSignature className='inline align-text-bottom mr-1' />
-          Rejoignez Nous (Licence)
+          Licences
         </Link>
         <Link
           href='mailto:contact@toulouseft.fr?subject=Contact-site-TFT'
           scroll={false}
+          className='text-balance'
         >
           <MdEmail className='inline align-text-bottom mr-1' />
           Contactez Nous
