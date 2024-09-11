@@ -113,7 +113,7 @@ const page = () => {
           />
           <h3 className='text-center'>C&eacute;dric Rollo</h3>
           <ul>
-            <li className='font-semibold'>Joueur Expert</li>
+            <li className='font-semibold'>Joueur Pro</li>
           </ul>
         </div>
       </div>
@@ -148,7 +148,7 @@ const page = () => {
           />
           <h3 className='text-center'>C&eacute;dric Rollo</h3>
           <ul>
-            <li className='font-semibold'>Joueur Expert</li>
+            <li className='font-semibold'>Joueur Pro</li>
           </ul>
         </div>
       </div>
