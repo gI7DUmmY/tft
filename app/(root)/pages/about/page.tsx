@@ -1,6 +1,6 @@
 import Carte from '@/components/Carte'
 import Image from 'next/image'
-import { BsPersonCircle } from 'react-icons/bs'
+// import { BsPersonCircle } from 'react-icons/bs'
 
 const page = () => {
   return (
@@ -68,8 +68,15 @@ const page = () => {
 
         {/* secretaire */}
         <div className='w-full p-3 border-2 border-slate-400 rounded-2xl my-6 relative'>
-          <BsPersonCircle className='absolute h-[80px] w-[80px] text-slate-600 inset-x-0 -top-[67px] mx-auto' />
-          <h3 className='text-center'>Poste à pourvoir</h3>
+          {/* <BsPersonCircle className='absolute h-[80px] w-[80px] text-slate-600 inset-x-0 -top-[67px] mx-auto' /> */}
+          <Image
+            src='https://firebasestorage.googleapis.com/v0/b/tft---site.appspot.com/o/damien.png?alt=media&token=a7a86a2e-62df-4f7a-a72b-838c9f6aebdc'
+            alt='photo-damien'
+            width={80}
+            height={80}
+            className='absolute inset-x-0 -top-[67px] mx-auto'
+          />
+          <h3 className='text-center'>Damien Ramon</h3>
           <ul>
             <li className='font-semibold'>Secr&eacute;taire</li>
           </ul>
