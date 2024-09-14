@@ -15,7 +15,6 @@ import {
 import { AiOutlineIdcard } from 'react-icons/ai'
 import { FaFileSignature } from 'react-icons/fa6'
 import { TbCircleLetterC } from 'react-icons/tb'
-import { PiCaretRightThin } from 'react-icons/pi'
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false)
@@ -76,7 +75,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href='https://www.ffft.fr/tournois-2023-2024'
+                href='https://ffft.tablesoccer.org/tournaments/'
                 onClick={() => setToggleMenu(false)}
                 target='_blank'
               >
@@ -134,7 +133,7 @@ const Navbar = () => {
           <MdMenuBook className='inline align-text-bottom mr-1' />
           Pratiquer
         </Link>
-        <a href='https://www.ffft.fr/tournois-2023-2024' target='_blank'>
+        <a href='https://ffft.tablesoccer.org/tournaments/' target='_blank'>
           <MdEvent className='inline align-text-bottom mr-1' />
           Tournois
         </a>
