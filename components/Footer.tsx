@@ -28,7 +28,7 @@ const Footer = () => {
                 target='_blank'
               >
                 <MdLink className='inline mr-1 align-middle' />
-                F&eacute;d&eacute;ration Fran&ccedil;aise de Football de Table
+                F&eacute;d&eacute;ration Fran&ccedil;aise de Babyfoot
               </Link>
             </li>
             {/* <li>

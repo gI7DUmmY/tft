@@ -118,7 +118,7 @@ const page = () => {
           <ol className='list-decimal list-inside'>
             <li className='my-1'>
               Rendez vous sur la plateforme officielle de la Fédération
-              Française de Football de Table CORAL :<br />
+              Française de Babyfoot CORAL :<br />
               <a
                 href='https://www.ffft.fr/coral-guide-dutilisation-pour-les-joueurs'
                 className='text-blue-600 no-underline'

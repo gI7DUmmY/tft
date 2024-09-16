@@ -70,7 +70,7 @@ const Navbar = () => {
                 onClick={() => setToggleMenu(false)}
               >
                 <MdMenuBook className='inline align-text-bottom mr-2' />
-                Le Football de Table
+                Pratiquer
               </Link>
             </li>
             <li>
