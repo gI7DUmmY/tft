@@ -118,6 +118,20 @@ const Youtube = () => {
             />
             <p>Ardennes</p>
           </Link>
+          <Link
+            href='https://www.youtube.com/@babyfoot_fr/videos'
+            target='_blank'
+            className='block'
+          >
+            <Image
+              src='https://firebasestorage.googleapis.com/v0/b/tft---site.appspot.com/o/rsft.jpg?alt=media&token=94fb8972-34e5-41ff-8c25-9657ac5f1686'
+              alt='logo Bezier'
+              width={50}
+              height={50}
+              className='mx-auto rounded-full logo-chaine'
+            />
+            <p>RSFT</p>
+          </Link>
         </div>
       </div>
     </section>
