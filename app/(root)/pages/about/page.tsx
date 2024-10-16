@@ -26,7 +26,10 @@ const page = () => {
 
       {/* bureau */}
 
-      <div className='w-full px-3 flex flex-col gap-8 items-center mx-auto text-left md:max-w-[425px]'>
+      <div
+        className='w-full px-3 flex flex-col gap-8 items-center mx-auto text-left md:max-w-[425px]'
+        id='bureau'
+      >
         <h2 className='w-full capitalize mt-3 mb-12 ml-3 prose-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-purple-400'>
           le bureau
         </h2>

@@ -1,5 +1,6 @@
 import Accordeon from '@/components/Accordeon'
 import Image from 'next/image'
+import Link from 'next/link'
 import { BsFiletypePdf } from 'react-icons/bs'
 import { MdLink } from 'react-icons/md'
 import {
@@ -127,9 +128,15 @@ const page = () => {
               </a>
             </li>
             <li className='my-1'>
-              R&eacute;glez le montant de votre licence par virement bancaire au
-              RIB :<br />
-              FR76 1005 7192 1300 0207 5500 111
+              R&eacute;glez le montant de votre licence par virement
+              bancaire/ch&egrave;que/liquide aupr&egrave;s de{' '}
+              <Link
+                href='/pages/about/#bureau'
+                className='text-blue-600 no-underline'
+              >
+                notre tr&eacute;sorier
+              </Link>
+              .
             </li>
           </ol>
         </Accordeon>
