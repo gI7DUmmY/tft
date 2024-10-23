@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const page = () => {
   return (
-    <main className='w-full min-h-screen font-sans mx-auto text-black md:max-w-[85%]'>
+    <main className='w-full min-h-screen font-sans mx-auto text-black md:max-w-[95%]'>
       <h1 className='text-center font-mono prose-2xl capitalize'>
         Qui sommes nous ?
       </h1>
@@ -27,15 +27,15 @@ const page = () => {
       {/* bureau */}
 
       <div
-        className='w-full px-3 flex flex-col gap-8 items-center mx-auto text-left md:max-w-[425px]'
+        className='w-full px-3 flex flex-col gap-8 items-center mx-auto text-left md:max-w-[425px] lg:max-w-none lg:flex-row lg:my-20 lg:items-start'
         id='bureau'
       >
-        <h2 className='w-full capitalize mt-3 mb-12 ml-3 prose-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-purple-400'>
+        <h2 className='w-full basis-2/12 capitalize mt-3 mb-12 ml-3 prose-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-purple-400'>
           le bureau
         </h2>
 
         {/* president/e */}
-        <div className='w-full p-3 border-2 border-slate-400 rounded-2xl my-6 relative'>
+        <div className='w-full basis-4/12 p-3 border-2 border-slate-400 rounded-2xl my-6 relative'>
           <Image
             src='https://firebasestorage.googleapis.com/v0/b/tft---site.appspot.com/o/clementine.png?alt=media&token=ca3b680a-be34-45cc-907c-20094a5ceabe'
             alt='photo-clementine'
@@ -55,7 +55,7 @@ const page = () => {
         </div>
 
         {/* tresorier/e */}
-        <div className='w-full p-3 border-2 border-slate-400 rounded-2xl my-6 relative'>
+        <div className='w-full basis-3/12 p-3 border-2 border-slate-400 rounded-2xl my-6 relative'>
           <Image
             src='https://firebasestorage.googleapis.com/v0/b/tft---site.appspot.com/o/gilles.png?alt=media&token=ee055a38-4e6d-4be0-9e39-4b4ed84167af'
             alt='photo-gilles'
@@ -70,7 +70,7 @@ const page = () => {
         </div>
 
         {/* secretaire */}
-        <div className='w-full p-3 border-2 border-slate-400 rounded-2xl my-6 relative'>
+        <div className='w-full basis-3/12 p-3 border-2 border-slate-400 rounded-2xl my-6 relative'>
           {/* <BsPersonCircle className='absolute h-[80px] w-[80px] text-slate-600 inset-x-0 -top-[67px] mx-auto' /> */}
           <Image
             src='https://firebasestorage.googleapis.com/v0/b/tft---site.appspot.com/o/damien.png?alt=media&token=a7a86a2e-62df-4f7a-a72b-838c9f6aebdc'
@@ -88,12 +88,12 @@ const page = () => {
 
       {/* Entraineurs */}
 
-      <div className='w-full px-3 flex flex-col gap-8 items-center mx-auto text-left md:max-w-[425px]'>
-        <h2 className='w-full capitalize mt-3 mb-12 ml-3 prose-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-purple-400'>
+      <div className='w-full px-3 flex flex-col gap-8 items-center mx-auto text-left md:max-w-[425px] lg:max-w-none lg:flex-row lg:my-20 lg:items-center'>
+        <h2 className='w-full basis-2/12 capitalize mt-3 mb-12 ml-3 prose-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-purple-400'>
           Entraîneur/Coach
         </h2>
 
-        <div className='w-full p-3 border-2 border-slate-400 rounded-2xl my-6 relative'>
+        <div className='w-full basis-5/12 p-3 border-2 border-slate-400 rounded-2xl my-6 relative'>
           <Image
             src='https://firebasestorage.googleapis.com/v0/b/tft---site.appspot.com/o/aurelien.png?alt=media&token=040cc168-2312-48c1-beae-a583fbb57b05'
             alt='photo-aurelien'
@@ -106,7 +106,8 @@ const page = () => {
             <li className='font-semibold'>Joueur Expert</li>
           </ul>
         </div>
-        <div className='w-full p-3 border-2 border-slate-400 rounded-2xl my-6 relative'>
+
+        <div className='w-full basis-5/12 p-3 border-2 border-slate-400 rounded-2xl my-6 relative'>
           <Image
             src='https://firebasestorage.googleapis.com/v0/b/tft---site.appspot.com/o/cedric.png?alt=media&token=73aba47b-61e0-487c-9e4f-cd27c573cf03'
             alt='photo-cedric'
@@ -122,7 +123,7 @@ const page = () => {
       </div>
 
       {/* selectionneurs */}
-      <div className='w-full px-3 flex flex-col gap-8 items-center mx-auto text-left md:max-w-[425px]'>
+      <div className='w-full px-3 flex flex-col gap-8 items-center mx-auto text-left md:max-w-[425px] lg:max-w-none lg:flex-row lg:my-20 lg:items-center'>
         <h2 className='w-full capitalize mt-3 mb-12 ml-3 prose-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-purple-400'>
           Sélectionneurs
         </h2>
