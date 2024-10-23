@@ -129,6 +129,20 @@ const page = () => {
 
         <div className='w-full p-3 border-2 border-slate-400 rounded-2xl my-6 relative'>
           <Image
+            src='https://firebasestorage.googleapis.com/v0/b/tft---site.appspot.com/o/laurent.png?alt=media&token=39c712b7-339e-4077-8ec1-22d9bb5d19d9'
+            alt='photo-laurent'
+            width={80}
+            height={80}
+            className='absolute inset-x-0 -top-[67px] mx-auto'
+          />
+          <h3 className='text-center'>Laurent Fargues</h3>
+          <ul>
+            <li className='font-semibold'>Joueur Expert</li>
+          </ul>
+        </div>
+
+        <div className='w-full p-3 border-2 border-slate-400 rounded-2xl my-6 relative'>
+          <Image
             src='https://firebasestorage.googleapis.com/v0/b/tft---site.appspot.com/o/stephane.png?alt=media&token=735ab057-2e4e-4c6c-a440-21c441ca1d78'
             alt='photo-stephane'
             width={80}
