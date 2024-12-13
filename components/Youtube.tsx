@@ -111,7 +111,7 @@ const Youtube = () => {
           >
             <Image
               src='https://firebasestorage.googleapis.com/v0/b/tft---site.appspot.com/o/Ardennes%20baby-foot.jpg?alt=media&token=7bae36d5-d3db-45aa-aca0-fc8209ef6806'
-              alt='logo Bezier'
+              alt='logo Ardennes'
               width={50}
               height={50}
               className='mx-auto rounded-full logo-chaine'
@@ -125,12 +125,26 @@ const Youtube = () => {
           >
             <Image
               src='https://firebasestorage.googleapis.com/v0/b/tft---site.appspot.com/o/rsft.jpg?alt=media&token=94fb8972-34e5-41ff-8c25-9657ac5f1686'
-              alt='logo Bezier'
+              alt='logo Villeurbanne'
               width={50}
               height={50}
               className='mx-auto rounded-full logo-chaine'
             />
             <p>RSFT</p>
+          </Link>
+          <Link
+            href='https://youtube.com/@babyfootgasiaquois?si=agm7DedElUnayZQn'
+            target='_blank'
+            className='block'
+          >
+            <Image
+              src='https://firebasestorage.googleapis.com/v0/b/tft---site.appspot.com/o/gauchy.jpg?alt=media&token=640a4530-55c0-4365-ba10-d8d6f2316ef3'
+              alt='logo Gauchy'
+              width={50}
+              height={50}
+              className='mx-auto rounded-full logo-chaine'
+            />
+            <p>BFG</p>
           </Link>
         </div>
       </div>
